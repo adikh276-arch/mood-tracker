@@ -1,0 +1,191 @@
+{
+  "tracker": {
+    "title": "Deine Reise",
+    "backToTracker": "Zurück zum Tracker",
+    "noEntries": "Noch keine Einträge. Fang an, deine Stimmung zu protokollieren!",
+    "logging": "Protokollierung...",
+    "logMood": "Stimmung protokollieren",
+    "logAnother": "Weiteres Protokoll",
+    "viewHistory": "Verlauf anzeigen",
+    "howAreYouFeeling": "Wie fühlen Sie sich?",
+    "checkInWithYourself": "Nimm dir einen Moment Zeit, um in dich hineinzuhören",
+    "whatDayIsIt": "Welcher Tag ist heute?",
+    "addNote": "Füge eine Notiz hinzu (optional) ✏️",
+    "accessRequired": "Zugriff erforderlich",
+    "accessJournal": "Bitte greifen Sie über den Ihnen zur Verfügung gestellten offiziellen Link auf diese Zeitschrift zu.",
+    "testingLocally": "Lokal testen?",
+    "appendToken": "Hängen Sie ein Token an Ihre URL an:"
+  },
+  "moods": {
+    "1": "Schwierigkeiten",
+    "2": "Niedrig",
+    "3": "Okay",
+    "4": "Gut",
+    "5": "Großartig"
+  },
+  "days": {
+    "Monday": "Montag",
+    "Tuesday": "Dienstag",
+    "Wednesday": "Mittwoch",
+    "Thursday": "Donnerstag",
+    "Friday": "Freitag",
+    "Saturday": "Samstag",
+    "Sunday": "Sonntag"
+  },
+  "messages": {
+    "Monday": {
+      "1": {
+        "heading": "Sei heute besonders nett 🤍",
+        "body": "Montags ist es schwer, den Tag zu bewältigen. Denk daran, dass du nicht alles allein tragen musst. Sei nachsichtig mit dir selbst und wisse, dass es schon reicht, heute hier zu sein."
+      },
+      "2": {
+        "heading": "Sanft durch den Montag navigieren ☁️",
+        "body": "Sich montags etwas niedergeschlagen zu fühlen, ist völlig verständlich. Der Wochenbeginn kann anstrengend sein. Gehen Sie die Dinge heute Schritt für Schritt an."
+      },
+      "3": {
+        "heading": "Finde deinen Montags-Flow 🌊",
+        "body": "Ein „Okay“-Montag ist ein Erfolg. Du bist da und startest entspannt in die Woche. Sei nachsichtig mit dir selbst, während du heute deinen Rhythmus findest."
+      },
+      "4": {
+        "heading": "Einen starken und ruhigen Montag! ☀️",
+        "body": "Du startest gut in die Woche. Das ist eine solide Basis. Behalte diese positive Dynamik bei, während du deine Aufgaben am Montag erledigst."
+      },
+      "5": {
+        "heading": "Unbändige Montagsenergie! 🚀",
+        "body": "Mit einer super Laune in die Woche zu starten, ist eine echte Superkraft. Du hast damit eine fantastische Ausgangslage geschaffen, die dich die ganze Woche begleiten wird. Nutze diesen Schwung, um heute deine größten Ziele anzugehen!"
+      }
+    },
+    "Tuesday": {
+      "1": {
+        "heading": "Ich wünsche dir viel Kraft 🫂",
+        "body": "Wenn es dir dienstags nicht gut geht, kannst du dich einsam fühlen, aber du bist nicht allein. Melde dich, wenn du Hilfe brauchst, und sorge heute vor allem für dein Wohlbefinden."
+      },
+      "2": {
+        "heading": "Hab heute Geduld mit dir selbst 🌿",
+        "body": "Falls du dich am Dienstag etwas schlapp fühlst, denk daran, dass Fortschritt nicht immer geradlinig verläuft. Hör auf die Bedürfnisse deines Körpers und Geistes."
+      },
+      "3": {
+        "heading": "Dienstagsruhe 🍃",
+        "body": "Ein „ganz normaler“ Dienstag ist völlig in Ordnung. Du bist auf einem guten Weg. Nimm dir einen Moment Zeit, um die kleinen Erfolge heute zu genießen."
+      },
+      "4": {
+        "heading": "Der Dienstag sieht vielversprechend aus 🌤️",
+        "body": "Heute gute Laune zu haben, ist ein Geschenk. Du hast das Montagstief hinter dir gelassen und bewahrst dir eine positive Einstellung. Genieße diese anhaltende Energie!"
+      },
+      "5": {
+        "heading": "Triumph am Dienstag! ✨",
+        "body": "Du bist heute richtig in Topform! Diese großartige Energie mit in den Dienstag zu nehmen, bedeutet, dass du richtig Schwung aufbaust. Mach weiter so!"
+      }
+    },
+    "Wednesday": {
+      "1": {
+        "heading": "Du bist heute nicht allein 💜",
+        "body": "Mitten in der Woche unter Druck zu stehen, ist hart. Gönnen Sie sich eine Auszeit. Das Wochenende ist schneller da, als Sie denken."
+      },
+      "2": {
+        "heading": "Sanftheit zur Wochenmitte ☁️",
+        "body": "Falls du dich am Mittwoch etwas niedergeschlagen fühlst, versuche, dir heute Abend etwas Kleines zu suchen, worauf du dich freuen kannst. Du hast diese Woche hart gearbeitet; es ist völlig in Ordnung, müde zu sein."
+      },
+      "3": {
+        "heading": "Balance zur Wochenmitte ⚖️",
+        "body": "Ein guter Mittwoch gibt dir Halt. Du bist im Gleichgewicht und kommst voran. Atme tief durch – du hast die Hälfte geschafft."
+      },
+      "4": {
+        "heading": "Glücksmomente am Mittwoch 🐫",
+        "body": "Du hast es mit guter Laune bis Mittwoch geschafft. Das Wochenende rückt näher! Behalte diese positive Einstellung bei, wenn du die Wochenmitte erreichst."
+      },
+      "5": {
+        "heading": "Meisterklasse zur Wochenmitte! 🏅",
+        "body": "Halbzeit der Woche und du fühlst dich super! Du rockst das! Nutze diesen Höhenflug, um etwas zu tun, das dich wirklich glücklich macht."
+      }
+    },
+    "Thursday": {
+      "1": {
+        "heading": "Sanfte Donnerstagsumarmung 🧸",
+        "body": "Donnerstags zu kämpfen, ist ein Zeichen dafür, dass die Woche lang war. Sei heute dein eigener bester Freund. Du hast das Wochenende fast erreicht."
+      },
+      "2": {
+        "heading": "Donnerstagsreflexion 🍂",
+        "body": "Wenn du dich heute etwas niedergeschlagen fühlst, denk daran, was du diese Woche schon alles geschafft hast. Du hast schon so viel erreicht; es ist völlig in Ordnung, müde zu sein."
+      },
+      "3": {
+        "heading": "Ruhig in den Donnerstag starten 🕰️",
+        "body": "Ein „Okay“-Donnerstag ist ein Zeichen dafür, dass du deine Aufgabe gut erledigt hast. Du hast die ganze Woche hart gearbeitet. Nur noch ein kleines Stück bis zum Ziel – halte dieses Tempo durch."
+      },
+      "4": {
+        "heading": "Fast geschafft, Donnerstag! 🌅",
+        "body": "Ein gelungener Donnerstag ist die perfekte Grundlage für ein fantastisches Wochenende. Du kannst das Ziel schon fast spüren! Behalte dein Lächeln bis zum Schluss bei."
+      },
+      "5": {
+        "heading": "Donnerstags-Spannung! 🎡",
+        "body": "Fühlst du dich großartig, so nah ist das Wochenende? Perfekt! Starte stark in die Woche mit diesem unglaublichen Energieschub."
+      }
+    },
+    "Friday": {
+      "1": {
+        "heading": "Heilende Freitagsenergie ✨",
+        "body": "Es ist eine große Belastung, so kurz vor Wochenende noch mit den Anstrengungen zu kämpfen. Sei stolz auf dich, dass du es bis Freitag geschafft hast. Dieses Wochenende gehört deiner Erholung."
+      },
+      "2": {
+        "heading": "Veröffentlichung am Freitag 🌊",
+        "body": "Falls du dich am Freitag etwas schlapp fühlst, gönn dir heute Abend eine Auszeit. Du hast diese Woche viel mit dir herumgetragen. Es ist Zeit, die Lasten abzulegen."
+      },
+      "3": {
+        "heading": "Freitag entspannt 😌",
+        "body": "Ein „guter“ Freitag bedeutet, dass du es geschafft hast. Der Druck lässt nach. Nimm dir heute Abend Zeit, um zu entspannen und den Stress der Woche hinter dir zu lassen."
+      },
+      "4": {
+        "heading": "Freitag, gute Laune! 🎊",
+        "body": "Ein „Karfreitag“ ist der perfekte Übergang ins Wochenende. Sie haben die Woche erfolgreich gemeistert. Genießen Sie den Übergang in Ihre Freizeit."
+      },
+      "5": {
+        "heading": "Fantastischer Freitag! 🥳",
+        "body": "Die Woche mit so einer tollen Stimmung ausklingen zu lassen – was für ein Erfolg! Diese Freude hast du dir verdient. Lass die Feierlichkeiten am Wochenende mit diesem Schwung beginnen!"
+      }
+    },
+    "Saturday": {
+      "1": {
+        "heading": "Gemütlicher Samstag 🕯️",
+        "body": "Das Wochenende kann besonders schwer sein. Sei heute bitte sanft zu dir selbst. Es gibt kein richtiges oder falsches Gefühl, auch nicht an einem Samstag."
+      },
+      "2": {
+        "heading": "Samstags-Sanftheit 💤",
+        "body": "Wenn du dich am Samstag schlapp fühlst, lass dich nicht unter Druck setzen, das Wochenende durchzufeiern. Wenn du lieber zu Hause bleiben und dich ausruhen möchtest, ist das völlig in Ordnung."
+      },
+      "3": {
+        "heading": "Einfacher Samstag 🍵",
+        "body": "Ein entspannter Samstag ist eine friedliche Phase. Keine Eile, kein Druck. Einfach nur da zu sein, genügt heute. Genieße die ruhigen Momente."
+      },
+      "4": {
+        "heading": "Ruhiger Samstag 🏖️",
+        "body": "Sich am freien Tag wohlzufühlen, ist ein Geschenk. Egal ob aktiv oder entspannt – genieße jeden Moment dieser positiven Wochenendstimmung."
+      },
+      "5": {
+        "heading": "Samstagspracht! 🌈",
+        "body": "Ein „großartiger“ Samstag ist einfach magisch. Nutze diese Zeit, um zu glänzen und die Freiheit des Wochenendes zu genießen. Schaffe heute wunderschöne Erinnerungen!"
+      }
+    },
+    "Sunday": {
+      "1": {
+        "heading": "Sonntags-Selbstfürsorge 💖",
+        "body": "Sonntags mit Problemen zu kämpfen ist häufiger, als man denkt. Verwöhne dich heute besonders. Du hast es verdient."
+      },
+      "2": {
+        "heading": "Sonntagsangst ade 🌙",
+        "body": "Falls du dich am Sonntag niedergeschlagen fühlst, versuche, dich auf den gegenwärtigen Moment zu konzentrieren, anstatt an die Arbeit von morgen zu denken. Du bist jetzt in Sicherheit und wirst unterstützt."
+      },
+      "3": {
+        "heading": "Sonntagabend 🍂",
+        "body": "Ein entspannter Sonntag ist ideal zum Nachdenken und Vorbereiten. Du bist ausgeglichen und bereit für alles, was kommt. Bleib bodenständig."
+      },
+      "4": {
+        "heading": "Entspannte Sonntagsstimmung 🕊️",
+        "body": "Sich heute gut zu fühlen, schafft eine friedvolle Atmosphäre für die kommende Woche. Genieße die letzten Tage des Wochenendes mit dankbarem Herzen."
+      },
+      "5": {
+        "heading": "Sonntagssonne! 🌻",
+        "body": "Ein herrlicher Sonntag ist die perfekte Erholung. Du startest voller Energie in die nächste Woche. Genieße diese wunderbare Energie heute!"
+      }
+    }
+  }
+}

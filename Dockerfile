@@ -1,15 +1,10 @@
-FROM node:20-alpine AS builder
+FROM node:20-alpine  AS builder
 WORKDIR /app
 COPY package*.json ./
 RUN npm i
 COPY . .
-
-ARG VITE_SUPABASE_URL
-ARG VITE_SUPABASE_ANON_KEY
-ENV VITE_SUPABASE_URL=$VITE_SUPABASE_URL
-ENV VITE_SUPABASE_ANON_KEY=$VITE_SUPABASE_ANON_KEY
-
 RUN npm run build
+
 
 FROM nginx:alpine
 WORKDIR /usr/share/nginx/html
@@ -23,5 +18,5 @@ COPY vite-nginx.conf /etc/nginx/conf.d/nginx.conf
 # Expose the port that Nginx will listen on
 EXPOSE 80
 
-# Command to start Nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Command to start Nginx with runtime environment variable injection
+CMD ["/bin/sh", "-c", "echo \"window.env = { VITE_NEON_CONNECTION_STRING: '$VITE_NEON_CONNECTION_STRING', VITE_NEON_API_KEY: '$VITE_NEON_API_KEY', VITE_PROJECT_ID: '$VITE_PROJECT_ID' };\" > /usr/share/nginx/html/mood_tracker/config.js && nginx -g 'daemon off;'"]

@@ -1,0 +1,191 @@
+{
+  "tracker": {
+    "title": "Perjalanan Anda",
+    "backToTracker": "Kembali ke Pelacak",
+    "noEntries": "Belum ada entri. Mulai catat suasana hatimu!",
+    "logging": "Sedang mencatat...",
+    "logMood": "Suasana Hati Log",
+    "logAnother": "Masuk Lainnya",
+    "viewHistory": "Lihat Riwayat",
+    "howAreYouFeeling": "Bagaimana perasaanmu?",
+    "checkInWithYourself": "Luangkan waktu sejenak untuk introspeksi diri.",
+    "whatDayIsIt": "Hari apa ini?",
+    "addNote": "Tambahkan catatan (opsional) ✏️",
+    "accessRequired": "Akses Diperlukan",
+    "accessJournal": "Silakan akses jurnal ini melalui tautan resmi yang telah diberikan kepada Anda.",
+    "testingLocally": "Pengujian secara lokal?",
+    "appendToken": "Tambahkan token ke URL Anda:"
+  },
+  "moods": {
+    "1": "Berjuang",
+    "2": "Rendah",
+    "3": "Oke",
+    "4": "Bagus",
+    "5": "Besar"
+  },
+  "days": {
+    "Monday": "Senin",
+    "Tuesday": "Selasa",
+    "Wednesday": "Rabu",
+    "Thursday": "Kamis",
+    "Friday": "Jumat",
+    "Saturday": "Sabtu",
+    "Sunday": "Minggu"
+  },
+  "messages": {
+    "Monday": {
+      "1": {
+        "heading": "Berbuat Baik Lebih dari yang Lain Hari Ini 🤍",
+        "body": "Berjuang di hari Senin itu berat. Ingatlah, kamu tidak perlu memikul semuanya sendirian. Bersikaplah lembut pada diri sendiri dan ketahuilah bahwa hadir hari ini saja sudah cukup."
+      },
+      "2": {
+        "heading": "Menjalani Hari Senin dengan Santai ☁️",
+        "body": "Merasa sedikit 'lesu' di hari Senin adalah hal yang sepenuhnya dapat dimengerti. Awal pekan memang bisa terasa berat. Jalani semuanya selangkah demi selangkah hari ini."
+      },
+      "3": {
+        "heading": "Menemukan Alur Hari Senin Anda 🌊",
+        "body": "Hari Senin yang \"baik-baik saja\" adalah sebuah kemenangan. Anda hadir dan memulai minggu ini dengan santai. Beri diri Anda kelonggaran saat Anda menemukan ritme Anda hari ini."
+      },
+      "4": {
+        "heading": "Semoga hari Senin Anda tetap semangat dan kuat! ☀️",
+        "body": "Anda memulai minggu ini dengan catatan yang 'Baik'. Itu adalah fondasi yang kokoh. Pertahankan momentum positif ini saat Anda menjalani tugas-tugas hari Senin Anda."
+      },
+      "5": {
+        "heading": "Semangat Senin yang Tak Terbendung! 🚀",
+        "body": "Memulai minggu dengan suasana hati yang 'Hebat' adalah sebuah kekuatan super. Anda telah menciptakan suasana luar biasa yang akan berdampak positif sepanjang minggu. Gunakan momentum ini untuk meraih tujuan terbesar Anda hari ini!"
+      }
+    },
+    "Tuesday": {
+      "1": {
+        "heading": "Mengirimkan Kekuatan Untukmu 🫂",
+        "body": "Merasa kesulitan di hari Selasa bisa terasa mengisolasi, tetapi Anda tidak sendirian. Hubungi seseorang jika Anda membutuhkannya, dan prioritaskan ketenangan batin Anda di atas segalanya hari ini."
+      },
+      "2": {
+        "heading": "Bersabarlah dengan diri sendiri hari ini 🌿",
+        "body": "Jika hari Selasa terasa agak 'lesu', ingatlah bahwa kemajuan tidak selalu linear. Dengarkan apa yang dibutuhkan tubuh dan pikiran Anda saat ini."
+      },
+      "3": {
+        "heading": "Ketenangan Hari Selasa 🍃",
+        "body": "Hari Selasa yang \"biasa saja\" itu tidak masalah. Anda menjaga kecepatan yang stabil. Luangkan waktu sejenak untuk menghargai kemenangan kecil hari ini."
+      },
+      "4": {
+        "heading": "Hari Selasa terlihat cerah 🌤️",
+        "body": "Suasana hati yang 'baik' hari ini adalah sebuah anugerah. Anda telah melewati masa sulit hari Senin dan mempertahankan pandangan positif. Nikmati energi yang stabil ini!"
+      },
+      "5": {
+        "heading": "Kemenangan di hari Selasa! ✨",
+        "body": "Kamu benar-benar bersinar hari ini! Membawa energi 'Hebat' itu ke hari Selasa berarti kamu sedang membangun momentum yang nyata. Teruslah bersinar!"
+      }
+    },
+    "Wednesday": {
+      "1": {
+        "heading": "Kamu Tidak Sendirian Hari Ini 💜",
+        "body": "Berjuang di tengah minggu itu berat. Beri diri Anda izin untuk bersantai. Akhir pekan akan segera tiba."
+      },
+      "2": {
+        "heading": "Kelembutan di Pertengahan Minggu ☁️",
+        "body": "Jika hari Rabu terasa 'lesu', cobalah temukan satu hal kecil yang bisa Anda nantikan malam ini. Anda telah bekerja keras minggu ini; wajar jika merasa lelah."
+      },
+      "3": {
+        "heading": "Keseimbangan Pertengahan Pekan ⚖️",
+        "body": "Hari Rabu yang \"Baik-Baik Saja\" adalah jangkar yang stabil. Anda seimbang dan terus bergerak maju. Tarik napas dalam-dalam — Anda sudah setengah jalan."
+      },
+      "4": {
+        "heading": "Kebahagiaan di Hari Rabu 🐫",
+        "body": "Anda telah sampai di hari Rabu dengan suasana hati yang 'baik'. Akhir pekan sudah di depan mata! Pertahankan semangat positif itu saat Anda melewati pertengahan minggu."
+      },
+      "5": {
+        "heading": "Kelas Master Pertengahan Minggu! 🏅",
+        "body": "Sudah setengah minggu berlalu dan merasa 'Hebat'! Anda luar biasa. Manfaatkan puncak performa pertengahan minggu ini untuk melakukan sesuatu yang benar-benar membuat Anda bahagia."
+      }
+    },
+    "Thursday": {
+      "1": {
+        "heading": "Pelukan Lembut di Hari Kamis 🧸",
+        "body": "Merasa kesulitan di hari Kamis adalah pertanda bahwa minggu ini terasa panjang. Jadilah sahabat terbaik bagi dirimu sendiri hari ini. Kamu hampir mencapai garis finish akhir pekan."
+      },
+      "2": {
+        "heading": "Renungan Hari Kamis 🍂",
+        "body": "Jika Anda merasa 'sedih' hari ini, lihat kembali berapa banyak yang telah Anda capai minggu ini. Anda telah sampai sejauh ini; wajar jika merasa lelah."
+      },
+      "3": {
+        "heading": "Tetap semangat di hari Kamis 🕰️",
+        "body": "Hari Kamis yang \"Oke\" adalah pertanda pekerjaan yang berhasil. Anda telah bekerja keras sepanjang minggu. Hanya sedikit lagi yang harus ditempuh — pertahankan kecepatan yang stabil."
+      },
+      "4": {
+        "heading": "Hampir tiba, hari Kamis! 🌅",
+        "body": "Hari Kamis yang 'baik' akan mempersiapkan Anda untuk akhir pekan yang fantastis. Anda bisa merasakan garis finis! Pertahankan senyum Anda hingga akhir hari ini."
+      },
+      "5": {
+        "heading": "Keseruan Hari Kamis! 🎡",
+        "body": "Merasa 'Hebat' menjelang akhir pekan? Itu yang terbaik! Akhiri minggu Anda dengan penuh semangat dengan suntikan energi yang luar biasa ini."
+      }
+    },
+    "Friday": {
+      "1": {
+        "heading": "Energi Penyembuhan di Hari Jumat ✨",
+        "body": "Berjuang di penghujung pekan memang berat untuk dihadapi. Banggalah pada diri sendiri karena telah berhasil melewati hari Jumat. Akhir pekan ini adalah untuk pemulihanmu."
+      },
+      "2": {
+        "heading": "Rilis Hari Jumat 🌊",
+        "body": "Jika hari Jumat terasa 'lesu', izinkan diri Anda untuk beristirahat malam ini. Anda telah memikul banyak beban minggu ini. Sudah saatnya untuk melepaskan beban-beban berat tersebut."
+      },
+      "3": {
+        "heading": "Santai di hari Jumat 😌",
+        "body": "Jumat yang \"Baik-Baik Saja\" berarti Anda telah berhasil melewatinya. Tekanan mulai berkurang. Manfaatkan malam ini untuk bersantai dan melepaskan stres selama seminggu."
+      },
+      "4": {
+        "heading": "Jumat terasa menyenangkan! 🎊",
+        "body": "Jumat Agung adalah jembatan sempurna menuju akhir pekan. Anda telah berhasil melewati minggu ini. Nikmati transisi ke waktu Anda sendiri."
+      },
+      "5": {
+        "heading": "Jumat yang fantastis! 🥳",
+        "body": "Mengakhiri minggu dengan suasana hati yang 'Luar Biasa' — sungguh sebuah kemenangan! Anda pantas mendapatkan kebahagiaan ini. Mari mulai perayaan akhir pekan dengan semangat ini!"
+      }
+    },
+    "Saturday": {
+      "1": {
+        "heading": "Sabtu yang menenangkan 🕯️",
+        "body": "Berjuang di akhir pekan bisa terasa lebih berat. Mohon bersikap lembut pada hatimu hari ini. Tidak ada cara yang benar untuk merasa, bahkan di hari Sabtu sekalipun."
+      },
+      "2": {
+        "heading": "Kelembutan di Hari Sabtu 💤",
+        "body": "Jika hari Sabtu terasa 'lesu', jangan merasa tertekan untuk 'beraktivitas di akhir pekan'. Jika Anda perlu tinggal di rumah dan beristirahat, itu adalah pilihan yang sepenuhnya sah."
+      },
+      "3": {
+        "heading": "Sabtu yang sederhana 🍵",
+        "body": "Hari Sabtu yang 'baik-baik saja' adalah masa tenang yang damai. Tanpa terburu-buru, tanpa tekanan. Sekadar hadir saja sudah cukup hari ini. Nikmati momen-momen tenang."
+      },
+      "4": {
+        "heading": "Sabtu yang tenang 🏖️",
+        "body": "Merasa 'senang' di hari libur adalah sebuah berkah. Baik Anda aktif maupun beristirahat, nikmati setiap momen dari suasana akhir pekan yang positif ini."
+      },
+      "5": {
+        "heading": "Kemegahan Hari Sabtu! 🌈",
+        "body": "Hari Sabtu yang 'Hebat' adalah keajaiban murni. Ini adalah waktu Anda untuk bersinar dan menikmati kebebasan akhir pekan. Buatlah kenangan indah hari ini!"
+      }
+    },
+    "Sunday": {
+      "1": {
+        "heading": "Perawatan Diri di Hari Minggu 💖",
+        "body": "Mengalami kesulitan di hari Minggu lebih umum daripada yang Anda kira. Perlakukan diri Anda dengan sangat lembut hari ini. Anda layak mendapatkan perhatian ekstra."
+      },
+      "2": {
+        "heading": "Hilanglah rasa cemas di hari Minggu 🌙",
+        "body": "Jika hari Minggu terasa 'sedih', cobalah fokus pada momen saat ini daripada pekerjaan besok. Anda aman dan didukung saat ini."
+      },
+      "3": {
+        "heading": "Bersantai di hari Minggu 🍂",
+        "body": "Hari Minggu yang \"baik-baik saja\" adalah waktu yang tepat untuk refleksi dan persiapan. Anda tenang dan siap menghadapi apa pun yang akan datang. Tetaplah membumi."
+      },
+      "4": {
+        "heading": "Suasana Minggu yang Menyenangkan 🕊️",
+        "body": "Merasa 'baik' hari ini akan menciptakan suasana damai untuk minggu depan. Nikmati sisa akhir pekan dengan hati yang penuh syukur."
+      },
+      "5": {
+        "heading": "Sinar Matahari Hari Minggu! 🌻",
+        "body": "Hari Minggu yang 'menyenangkan' adalah cara terbaik untuk mengisi ulang energi. Anda akan memasuki minggu depan dengan hati yang penuh. Nikmati energi indah ini hari ini!"
+      }
+    }
+  }
+}

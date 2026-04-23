@@ -1,0 +1,191 @@
+{
+  "tracker": {
+    "title": "Twoja podróż",
+    "backToTracker": "Powrót do Trackera",
+    "noEntries": "Brak wpisów. Zacznij zapisywać swój nastrój!",
+    "logging": "Wycięcie lasu...",
+    "logMood": "Log Mood",
+    "logAnother": "Zaloguj się ponownie",
+    "viewHistory": "Wyświetl historię",
+    "howAreYouFeeling": "Jak się czujesz?",
+    "checkInWithYourself": "Zatrzymaj się na chwilę i zastanów się nad sobą",
+    "whatDayIsIt": "Jaki jest dziś dzień?",
+    "addNote": "Dodaj notatkę (opcjonalnie) ✏️",
+    "accessRequired": "Wymagany dostęp",
+    "accessJournal": "Aby uzyskać dostęp do tego czasopisma, skorzystaj z oficjalnego linku, który Ci udostępniliśmy.",
+    "testingLocally": "Testowanie lokalne?",
+    "appendToken": "Dodaj token do swojego adresu URL:"
+  },
+  "moods": {
+    "1": "Zmagający się",
+    "2": "Niski",
+    "3": "Dobra",
+    "4": "Dobry",
+    "5": "Świetnie"
+  },
+  "days": {
+    "Monday": "Poniedziałek",
+    "Tuesday": "Wtorek",
+    "Wednesday": "Środa",
+    "Thursday": "Czwartek",
+    "Friday": "Piątek",
+    "Saturday": "Sobota",
+    "Sunday": "Niedziela"
+  },
+  "messages": {
+    "Monday": {
+      "1": {
+        "heading": "Bądź dziś wyjątkowo miły 🤍",
+        "body": "Walka w poniedziałek jest trudna. Pamiętaj, że nie musisz dźwigać wszystkiego na swoich barkach. Bądź dla siebie łagodny i wiedz, że wystarczy, że się dzisiaj pojawisz."
+      },
+      "2": {
+        "heading": "Łagodne nawigowanie w poniedziałek ☁️",
+        "body": "To, że w poniedziałek czujesz się trochę „przygnębiony”, jest całkowicie zrozumiałe. Początek tygodnia bywa ciężki. Podchodź dziś do sprawy krok po kroku."
+      },
+      "3": {
+        "heading": "Znajdź swój poniedziałkowy flow 🌊",
+        "body": "„Dobry” poniedziałek to zwycięstwo. Stawiasz czoła wyzwaniom i powoli wchodzisz w tydzień. Bądź dla siebie wyrozumiały, odnajdując dziś swój rytm."
+      },
+      "4": {
+        "heading": "Spokojnego i silnego poniedziałku! ☀️",
+        "body": "Zaczynasz tydzień w dobrym nastroju. To solidny fundament. Utrzymaj ten pozytywny impet, realizując poniedziałkowe zadania."
+      },
+      "5": {
+        "heading": "Niezatrzymana poniedziałkowa energia! 🚀",
+        "body": "Rozpoczęcie tygodnia w „świetnym” nastroju to supermoc. Nadałeś/aś niesamowity ton, który będzie miał wpływ na cały tydzień. Wykorzystaj ten impet, aby zrealizować swoje największe cele już dziś!"
+      }
+    },
+    "Tuesday": {
+      "1": {
+        "heading": "Wysyłam Ci siłę 🫂",
+        "body": "Walka we wtorek może być izolująca, ale nie jesteś sam. Skontaktuj się z nami, jeśli potrzebujesz, i dziś priorytetowo potraktuj swój spokój."
+      },
+      "2": {
+        "heading": "Dzisiaj bądź cierpliwy wobec siebie 🌿",
+        "body": "Jeśli wtorek wydaje Ci się nieco „niski”, pamiętaj, że postęp nie zawsze jest liniowy. Posłuchaj, czego teraz potrzebuje Twoje ciało i umysł."
+      },
+      "3": {
+        "heading": "Wtorek Spokój 🍃",
+        "body": "Wtorek „w porządku” jest w porządku. Utrzymujesz równe tempo. Poświęć chwilę, aby docenić dziś małe zwycięstwa."
+      },
+      "4": {
+        "heading": "Wtorek zapowiada się obiecująco 🌤️",
+        "body": "Dobry nastrój dzisiaj to dar. Poniedziałkowy garb masz już za sobą i utrzymujesz pozytywne nastawienie. Ciesz się tą stabilną energią!"
+      },
+      "5": {
+        "heading": "Wtorkowy triumf! ✨",
+        "body": "Dziś absolutnie rozkwitasz! Przenoszenie tej „Wspaniałej” energii we wtorek oznacza, że nabierasz prawdziwego rozpędu. Nie przestawaj świecić!"
+      }
+    },
+    "Wednesday": {
+      "1": {
+        "heading": "Nie jesteś dziś sam 💜",
+        "body": "Trudno jest walczyć w środku tygodnia. Pozwól sobie na zwolnienie tempa. Weekend nadejdzie, nim się obejrzysz."
+      },
+      "2": {
+        "heading": "Miękkość w środku tygodnia ☁️",
+        "body": "Jeśli środa wydaje się „dołująca”, spróbuj znaleźć jedną małą rzecz, na którą będziesz czekać z niecierpliwością tego wieczoru. Ciężko pracowałeś w tym tygodniu, to normalne, że czujesz się zmęczony."
+      },
+      "3": {
+        "heading": "Bilans w środku tygodnia ⚖️",
+        "body": "Środa „w porządku” to stabilna kotwica. Jesteś w równowadze i idziesz naprzód. Weź głęboki oddech – jesteś w połowie drogi."
+      },
+      "4": {
+        "heading": "Szczęście w środku miesiąca 🐫",
+        "body": "Dotarłeś do środy z „dobrym” nastawieniem. Weekend zbliża się wielkimi krokami! Zachowaj pozytywne nastawienie, przekraczając granicę środka tygodnia."
+      },
+      "5": {
+        "heading": "Mistrzowska klasa w środku tygodnia! 🏅",
+        "body": "W połowie tygodnia i czuję się „Świetnie”! Dajesz radę. Wykorzystaj ten szczytowy moment w środku tygodnia, aby zrobić coś, co naprawdę Cię uszczęśliwi."
+      }
+    },
+    "Thursday": {
+      "1": {
+        "heading": "Delikatny czwartkowy uścisk 🧸",
+        "body": "Walka w czwartek to znak, że tydzień był długi. Bądź dziś swoim najlepszym przyjacielem. Jesteś już prawie na mecie weekendu."
+      },
+      "2": {
+        "heading": "Czwartkowa refleksja 🍂",
+        "body": "Jeśli dziś czujesz się „słabo”, przypomnij sobie, ile już udało Ci się osiągnąć w tym tygodniu. Zaszedłeś tak daleko, że zmęczenie jest w porządku."
+      },
+      "3": {
+        "heading": "Spokojnie w czwartek 🕰️",
+        "body": "„Dobry” czwartek to dobrze wykonana robota. Pracowałeś cały tydzień. Jeszcze tylko trochę – utrzymaj stałe tempo."
+      },
+      "4": {
+        "heading": "Już prawie czwartek! 🌅",
+        "body": "„Dobry” czwartek to gwarancja fantastycznego weekendu. Czujesz metę! Niech ten uśmiech nie znika z twarzy aż do samego końca."
+      },
+      "5": {
+        "heading": "Czwartkowe emocje! 🎡",
+        "body": "Czujesz się „świetnie”, skoro weekend już tak blisko? To świetnie! Zakończ tydzień z tym niesamowitym zastrzykiem energii."
+      }
+    },
+    "Friday": {
+      "1": {
+        "heading": "Piątkowa Energia Uzdrawiająca ✨",
+        "body": "Walka pod koniec tygodnia to nie lada wyzwanie. Bądź z siebie dumny, że dotrwałeś do piątku. Ten weekend jest przeznaczony na regenerację."
+      },
+      "2": {
+        "heading": "Wydanie piątkowe 🌊",
+        "body": "Jeśli piątek wydaje się „niski”, pozwól sobie dziś wieczorem zapaść w sen. Dźwigałeś/aś w tym tygodniu wiele. Czas odłożyć ciężkie rzeczy."
+      },
+      "3": {
+        "heading": "Piątkowy spokój 😌",
+        "body": "„Dobry” piątek oznacza, że dałeś radę. Presja ustępuje. Poświęć dzisiejszy wieczór na relaks i uwolnienie się od stresu całego tygodnia."
+      },
+      "4": {
+        "heading": "Piątek w dobrym nastroju! 🎊",
+        "body": "„Dobry” Piątek to idealne przejście do weekendu. Udało Ci się pomyślnie przetrwać ten tydzień. Ciesz się przejściem do swojego czasu."
+      },
+      "5": {
+        "heading": "Fantastyczny piątek! 🥳",
+        "body": "Zamykając tydzień w „Wspaniałym” nastroju – cóż za zwycięstwo! Zasłużyłeś na tę radość. Niech weekendowe świętowanie rozpocznie się z tą iskrą!"
+      }
+    },
+    "Saturday": {
+      "1": {
+        "heading": "Pocieszająca sobota 🕯️",
+        "body": "Walka w weekend może być wyjątkowo trudna. Proszę, bądź dziś łagodny w swoim sercu. Nie ma jednego właściwego sposobu na odczuwanie emocji, nawet w sobotę."
+      },
+      "2": {
+        "heading": "Sobotnia miękkość 💤",
+        "body": "Jeśli sobota wydaje Ci się „słaba”, nie czuj presji, żeby „przeżyć weekend”. Jeśli potrzebujesz zostać w domu i odpocząć, to jest to całkowicie uzasadniony wybór."
+      },
+      "3": {
+        "heading": "Prosta sobota 🍵",
+        "body": "Sobota „w porządku” to spokojny płaskowyż. Bez pośpiechu, bez presji. Dziś wystarczy po prostu istnieć. Ciesz się cichymi chwilami."
+      },
+      "4": {
+        "heading": "Spokojna sobota 🏖️",
+        "body": "Dobre samopoczucie w dzień wolny to błogosławieństwo. Niezależnie od tego, czy jesteś aktywny, czy odpoczywasz, ciesz się każdą chwilą tego pozytywnego weekendu."
+      },
+      "5": {
+        "heading": "Sobotni blask! 🌈",
+        "body": "„Wspaniała” sobota to czysta magia. To Twój czas, by zabłysnąć i cieszyć się weekendową wolnością. Stwórz dziś piękne wspomnienia!"
+      }
+    },
+    "Sunday": {
+      "1": {
+        "heading": "Niedzielna troska o siebie 💖",
+        "body": "Zmagania w niedzielę zdarzają się częściej, niż myślisz. Podaruj sobie dziś wyjątkową czułość. Zasługujesz na dodatkową troskę."
+      },
+      "2": {
+        "heading": "Niedzielne strachy, precz!",
+        "body": "Jeśli niedziela wydaje się „dołująca”, postaraj się skupić na chwili obecnej, a nie na jutrzejszej pracy. Teraz jesteś bezpieczny i masz wsparcie."
+      },
+      "3": {
+        "heading": "Niedzielne uspokojenie 🍂",
+        "body": "Niedziela w dobrym nastroju to idealny czas na refleksję i przygotowania. Jesteś spokojny i gotowy na wszystko, co przyniesie przyszłość. Pozostań twardo stąpający po ziemi."
+      },
+      "4": {
+        "heading": "Delikatne niedzielne wibracje 🕊️",
+        "body": "Dzisiejsze dobre samopoczucie nadaje spokojny ton na nadchodzący tydzień. Ciesz się ostatnimi chwilami weekendu z wdzięcznym sercem."
+      },
+      "5": {
+        "heading": "Słoneczna niedziela! 🌻",
+        "body": "„Wspaniała” niedziela to idealny sposób na regenerację. Wkraczasz w kolejny tydzień z pełnym sercem. Delektuj się tą piękną energią już dziś!"
+      }
+    }
+  }
+}

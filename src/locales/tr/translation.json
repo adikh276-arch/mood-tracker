@@ -1,0 +1,191 @@
+{
+  "tracker": {
+    "title": "Yolculuğunuz",
+    "backToTracker": "İzleyiciye geri dön",
+    "noEntries": "Henüz hiçbir kayıt yok. Ruh halinizi kaydetmeye başlayın!",
+    "logging": "Günlük kaydı...",
+    "logMood": "Ruh Hali Günlüğü",
+    "logAnother": "Başka bir oturum aç",
+    "viewHistory": "Geçmişi Görüntüle",
+    "howAreYouFeeling": "Nasıl hissediyorsun?",
+    "checkInWithYourself": "Kendinizle bağlantı kurmak için bir an ayırın.",
+    "whatDayIsIt": "Bugün hangi gün?",
+    "addNote": "İsteğe bağlı olarak bir not ekleyin ✏️",
+    "accessRequired": "Erişim Gerekli",
+    "accessJournal": "Lütfen size verilen resmi bağlantı üzerinden bu dergiye erişin.",
+    "testingLocally": "Yerel olarak mı test ediliyor?",
+    "appendToken": "URL'nize bir belirteç ekleyin:"
+  },
+  "moods": {
+    "1": "Mücadele etme",
+    "2": "Düşük",
+    "3": "Tamam",
+    "4": "İyi",
+    "5": "Harika"
+  },
+  "days": {
+    "Monday": "Pazartesi",
+    "Tuesday": "Salı",
+    "Wednesday": "Çarşamba",
+    "Thursday": "Perşembe",
+    "Friday": "Cuma",
+    "Saturday": "Cumartesi",
+    "Sunday": "Pazar"
+  },
+  "messages": {
+    "Monday": {
+      "1": {
+        "heading": "Bugün Ekstra Nazik Ol 🤍",
+        "body": "Pazartesi günü zorlanmak gerçekten güç. Lütfen her şeyi tek başınıza taşımak zorunda olmadığınızı unutmayın. Kendinize karşı nazik olun ve bugün işe gelmenin bile yeterli olduğunu bilin."
+      },
+      "2": {
+        "heading": "Pazartesiye Sakin Bir Şekilde Başlamak ☁️",
+        "body": "Pazartesi günü biraz keyifsiz hissetmek tamamen anlaşılabilir bir durum. Haftanın başlangıcı ağır geçebilir. Bugün her şeyi adım adım ele alın."
+      },
+      "3": {
+        "heading": "Pazartesi Gününüze Uygun Bir Şekilde Başlamak 🌊",
+        "body": "\"İyi\" bir Pazartesi bile bir zaferdir. Haftaya rahat bir başlangıç yapıyorsunuz. Bugün kendi ritminizi bulurken kendinize karşı hoşgörülü olun."
+      },
+      "4": {
+        "heading": "Sakin ve güçlü bir Pazartesi! ☀️",
+        "body": "Haftaya 'iyi' bir başlangıç yapıyorsunuz. Bu sağlam bir temel. Pazartesi görevlerinizi yerine getirirken bu olumlu ivmeyi koruyun."
+      },
+      "5": {
+        "heading": "Dur durak bilmeyen Pazartesi enerjisi! 🚀",
+        "body": "Haftaya 'Harika' bir ruh haliyle başlamak süper bir güçtür. Tüm haftanıza yansıyacak inanılmaz bir ton belirlediniz. Bu ivmeyi kullanarak bugün en büyük hedeflerinize ulaşın!"
+      }
+    },
+    "Tuesday": {
+      "1": {
+        "heading": "Sana güç gönderiyorum 🫂",
+        "body": "Salı günü zorlanmak yalnızlık hissi yaratabilir, ama yalnız değilsiniz. İhtiyacınız varsa yardım isteyin ve bugün her şeyden önce kendi huzurunuza öncelik verin."
+      },
+      "2": {
+        "heading": "Bugün kendinize karşı sabırlı olun 🌿",
+        "body": "Salı günü kendinizi biraz \"moraliniz bozuk\" hissediyorsanız, ilerlemenin her zaman doğrusal olmadığını unutmayın. Bedeninizin ve zihninizin şu anda neye ihtiyacı olduğunu dinleyin."
+      },
+      "3": {
+        "heading": "Salı Huzuru 🍃",
+        "body": "\"İyi\" bir Salı günü gayet güzel. İstikrarlı bir tempoda ilerliyorsunuz. Bugün elde ettiğiniz küçük başarıların kıymetini bilmek için bir an ayırın."
+      },
+      "4": {
+        "heading": "Salı günü umut verici görünüyor 🌤️",
+        "body": "Bugün iyi bir ruh halinde olmak bir hediye. Pazartesi sendromunu atlattınız ve olumlu bir bakış açısını koruyorsunuz. Bu istikrarlı enerjinin tadını çıkarın!"
+      },
+      "5": {
+        "heading": "Salı Zaferi! ✨",
+        "body": "Bugün gerçekten harika bir performans sergiliyorsunuz! Bu \"mükemmel\" enerjiyi Salı gününe de taşımanız, gerçek bir ivme kazandığınız anlamına geliyor. Parlamaya devam edin!"
+      }
+    },
+    "Wednesday": {
+      "1": {
+        "heading": "Bugün yalnız değilsin 💜",
+        "body": "Hafta ortasında zorlanmak normal. Kendinize yavaşlama izni verin. Hafta sonu çok yakında gelecek."
+      },
+      "2": {
+        "heading": "Hafta Ortası Yumuşaklığı ☁️",
+        "body": "Çarşamba günü kendinizi \"moraliniz bozuk\" hissediyorsanız, bu akşam için dört gözle bekleyeceğiniz küçük bir şey bulmaya çalışın. Bu hafta çok çalıştınız; yorgun hissetmeniz normal."
+      },
+      "3": {
+        "heading": "Hafta Ortası Bakiyesi ⚖️",
+        "body": "\"İyi\" bir Çarşamba, istikrarlı bir dayanak noktasıdır. Dengedesiniz ve ilerliyorsunuz. Derin bir nefes alın; yolun yarısını tamamladınız bile."
+      },
+      "4": {
+        "heading": "Çarşamba Günü Mutluluğu 🐫",
+        "body": "Çarşamba gününe 'iyi' bir ruh haliyle ulaştınız. Hafta sonu yaklaşıyor! Hafta ortasını geçerken bu olumlu ruh halinizi koruyun."
+      },
+      "5": {
+        "heading": "Hafta Ortası Ustalık Sınıfı! 🏅",
+        "body": "Haftanın yarısı geçti ve kendinizi 'Harika' hissediyorsunuz! Muhteşem gidiyorsunuz. Bu hafta ortası zirvesini, sizi gerçekten mutlu eden bir şey yapmak için kullanın."
+      }
+    },
+    "Thursday": {
+      "1": {
+        "heading": "Nazik Perşembe Kucaklaması 🧸",
+        "body": "Perşembe günü zorlanmak, haftanın uzun geçtiğinin bir işaretidir. Bugün kendinizin en iyi dostu olun. Haftasonunun bitiş çizgisine neredeyse geldiniz."
+      },
+      "2": {
+        "heading": "Perşembe Düşünceleri 🍂",
+        "body": "Bugün kendinizi 'moraliniz bozuk' hissediyorsanız, bu hafta ne kadar çok şey başardığınıza bir bakın. Çok yol kat ettiniz; yorgun olmanız normal."
+      },
+      "3": {
+        "heading": "Perşembeye doğru istikrarlı bir şekilde ilerliyoruz 🕰️",
+        "body": "\"İyi\" bir Perşembe, işin iyi yapıldığının göstergesidir. Tüm hafta boyunca çalıştınız. Sadece biraz daha yolunuz kaldı - bu istikrarlı tempoyu koruyun."
+      },
+      "4": {
+        "heading": "Neredeyse geldik, Perşembe! 🌅",
+        "body": "İyi bir Perşembe, harika bir hafta sonuna hazırlanmanızı sağlar. Bitiş çizgisini hissedebiliyorsunuz! Bugünün sonunda da gülümsemenizi koruyun."
+      },
+      "5": {
+        "heading": "Perşembe heyecanı! 🎡",
+        "body": "Haftasonuna bu kadar yakınken kendinizi 'Harika' hissediyor musunuz? İşte bu harika! Bu inanılmaz enerji patlamasıyla haftanızı güçlü bir şekilde tamamlayın."
+      }
+    },
+    "Friday": {
+      "1": {
+        "heading": "Şifalı Cuma Enerjisi ✨",
+        "body": "Haftanın sonuna doğru zorluklarla boğuşmak oldukça zorlayıcı olabilir. Cuma gününe kadar dayanabildiğiniz için kendinizle gurur duyun. Bu hafta sonu iyileşmeniz için."
+      },
+      "2": {
+        "heading": "Cuma günü yayınlanacak 🌊",
+        "body": "Eğer Cuma günü kendinizi \"düşük enerjili\" hissediyorsanız, bu gece dinlenmeye bırakın. Bu hafta çok fazla yük taşıdınız. Artık ağır şeyleri bırakmanın zamanı geldi."
+      },
+      "3": {
+        "heading": "Cuma Rahatlığı 😌",
+        "body": "\"İyi bir Cuma\" demek, haftayı atlattığınız anlamına gelir. Baskı azalıyor. Bu geceyi rahatlamak ve haftanın stresinden kurtulmak için kullanın."
+      },
+      "4": {
+        "heading": "Cuma günü harika hissediyorum! 🎊",
+        "body": "\"Güzel\" bir Cuma, hafta sonuna geçiş için mükemmel bir köprüdür. Haftayı başarıyla atlattınız. Kendi zamanınıza geçişin tadını çıkarın."
+      },
+      "5": {
+        "heading": "Harika bir Cuma! 🥳",
+        "body": "Haftayı 'Harika' bir ruh haliyle kapatmak ne büyük bir zafer! Bu mutluluğu hak ettiniz. Bu enerjiyle hafta sonu kutlamaları başlasın!"
+      }
+    },
+    "Saturday": {
+      "1": {
+        "heading": "Rahatlatıcı bir Cumartesi 🕯️",
+        "body": "Hafta sonu zorluklarla boğuşmak ekstra zor gelebilir. Lütfen bugün kalbinize nazik davranın. Cumartesi günü bile olsa, nasıl hissetmeniz gerektiğine dair doğru bir yol yoktur."
+      },
+      "2": {
+        "heading": "Cumartesi Yumuşaklığı 💤",
+        "body": "Cumartesi günü kendinizi \"düşük enerjili\" hissediyorsanız, \"hafta sonunu dolu dolu yaşamak\" zorunda hissetmeyin. Evde kalıp dinlenmeniz gerekiyorsa, bu tamamen geçerli bir tercihtir."
+      },
+      "3": {
+        "heading": "Sade bir Cumartesi 🍵",
+        "body": "\"İyi\" bir Cumartesi, huzurlu bir platodur. Acele yok, baskı yok. Bugün sadece var olmak yeterli. Sessiz anların tadını çıkarın."
+      },
+      "4": {
+        "heading": "Huzurlu Cumartesi 🏖️",
+        "body": "Tatil gününüzde kendinizi \"iyi\" hissetmek bir nimettir. İster aktif olun ister dinlenin, bu olumlu hafta sonu havasının her anının tadını çıkarın."
+      },
+      "5": {
+        "heading": "Cumartesi Muhteşemliği! 🌈",
+        "body": "'Harika' bir Cumartesi, tam anlamıyla büyülü bir şeydir. Parlama ve hafta sonunun özgürlüğünün tadını çıkarma zamanınız geldi. Bugün güzel anılar biriktirin!"
+      }
+    },
+    "Sunday": {
+      "1": {
+        "heading": "Pazar Günü Kendine Bakım 💖",
+        "body": "Pazar günleri zorlanmak sandığınızdan daha yaygın. Bugün kendinize son derece şefkatli davranın. Bu ekstra özeni hak ediyorsunuz."
+      },
+      "2": {
+        "heading": "Pazar sendromu, defol git 🌙",
+        "body": "Eğer Pazar günü kendinizi 'moraliniz bozuk' hissediyorsanız, yarının işlerine değil, şu anki ana odaklanmaya çalışın. Şu anda güvendesiniz ve destekleniyorsunuz."
+      },
+      "3": {
+        "heading": "Pazar Günü Yerleşimi 🍂",
+        "body": "\"İyi\" bir Pazar günü, düşünmek ve hazırlık yapmak için mükemmel bir zamandır. Dengelisiniz ve bundan sonra ne olursa olsun hazırsınız. Ayaklarınız yere sağlam bassın."
+      },
+      "4": {
+        "heading": "Sakin Pazar Havası 🕊️",
+        "body": "Bugün kendinizi 'iyi' hissetmek, önümüzdeki hafta için huzurlu bir başlangıç sağlar. Haftasonunun son günlerinin tadını şükran dolu bir kalple çıkarın."
+      },
+      "5": {
+        "heading": "Pazar günü güneşi! 🌻",
+        "body": "'Harika' bir Pazar günü, en büyük yenilenme fırsatıdır. Yeni haftaya dolu bir kalple giriyorsunuz. Bugün bu güzel enerjinin tadını çıkarın!"
+      }
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "tracker": {
+    "title": "Votre voyage",
+    "backToTracker": "Retour au traqueur",
+    "noEntries": "Aucune entrée pour l'instant. Commencez à noter votre humeur !",
+    "logging": "Enregistrement...",
+    "logMood": "Journal de l'humeur",
+    "logAnother": "Connectez-vous à un autre",
+    "viewHistory": "Consulter l'historique",
+    "howAreYouFeeling": "Comment te sens-tu?",
+    "checkInWithYourself": "Prenez un moment pour vous recentrer.",
+    "whatDayIsIt": "Quel jour sommes-nous ?",
+    "addNote": "Ajouter une note (facultatif) ✏️",
+    "accessRequired": "Accès requis",
+    "accessJournal": "Veuillez accéder à cette revue via le lien officiel qui vous a été fourni.",
+    "testingLocally": "Tests en local ?",
+    "appendToken": "Ajoutez un jeton à votre URL :"
+  },
+  "moods": {
+    "1": "En difficulté",
+    "2": "Faible",
+    "3": "D'accord",
+    "4": "Bien",
+    "5": "Super"
+  },
+  "days": {
+    "Monday": "Lundi",
+    "Tuesday": "Mardi",
+    "Wednesday": "Mercredi",
+    "Thursday": "Jeudi",
+    "Friday": "Vendredi",
+    "Saturday": "Samedi",
+    "Sunday": "Dimanche"
+  },
+  "messages": {
+    "Monday": {
+      "1": {
+        "heading": "Soyez particulièrement gentil aujourd'hui 🤍",
+        "body": "C'est difficile le lundi. N'oubliez pas que vous n'avez pas à tout porter sur vos épaules. Soyez indulgent envers vous-même et sachez que le simple fait d'être là aujourd'hui est déjà un grand pas en avant."
+      },
+      "2": {
+        "heading": "Aborder le lundi en douceur ☁️",
+        "body": "Avoir le cafard le lundi, c'est tout à fait normal. Le début de semaine peut être difficile. Allez-y doucement aujourd'hui."
+      },
+      "3": {
+        "heading": "Trouver son rythme du lundi 🌊",
+        "body": "Un lundi qui se passe bien, c'est déjà une victoire. Vous êtes là et vous abordez la semaine en douceur. Soyez indulgent envers vous-même et prenez le temps de trouver votre rythme aujourd'hui."
+      },
+      "4": {
+        "heading": "Lundi stable et fort ! ☀️",
+        "body": "Vous commencez la semaine du bon pied. C'est un excellent point de départ. Continuez sur cette lancée positive pour accomplir vos tâches de lundi."
+      },
+      "5": {
+        "heading": "Une énergie débordante pour ce lundi ! 🚀",
+        "body": "Commencer la semaine de bonne humeur est un atout précieux. Vous avez donné le ton et votre énergie positive se répercutera sur toute la semaine. Profitez de cet élan pour atteindre vos objectifs les plus ambitieux dès aujourd'hui !"
+      }
+    },
+    "Tuesday": {
+      "1": {
+        "heading": "Je vous envoie plein de force 🫂",
+        "body": "Un mardi difficile peut être source d'isolement, mais vous n'êtes pas seul(e). N'hésitez pas à demander de l'aide si besoin, et aujourd'hui, prenez soin de votre bien-être avant tout."
+      },
+      "2": {
+        "heading": "Soyez patient avec vous-même aujourd'hui 🌿",
+        "body": "Si le mardi vous semble un peu difficile, rappelez-vous que les progrès ne sont pas toujours linéaires. Écoutez votre corps et votre esprit : ils ont besoin de vous en ce moment."
+      },
+      "3": {
+        "heading": "Tranquillité du mardi 🍃",
+        "body": "Un mardi correct, c'est très bien. Vous gardez un rythme régulier. Prenez un instant pour apprécier les petites victoires d'aujourd'hui."
+      },
+      "4": {
+        "heading": "Mardi s'annonce radieux 🌤️",
+        "body": "Être de bonne humeur aujourd'hui est un vrai cadeau. Vous avez passé le cap difficile du lundi et vous gardez une attitude positive. Profitez de cette énergie stable !"
+      },
+      "5": {
+        "heading": "Victoire du mardi ! ✨",
+        "body": "Tu es au top aujourd'hui ! Garder cette énergie positive mardi te permettra de prendre un véritable élan. Continue de briller !"
+      }
+    },
+    "Wednesday": {
+      "1": {
+        "heading": "Tu n'es pas seul aujourd'hui 💜",
+        "body": "Il est difficile de tenir le coup en milieu de semaine. Autorisez-vous à ralentir. Le week-end arrivera vite."
+      },
+      "2": {
+        "heading": "Douceur en milieu de semaine ☁️",
+        "body": "Si le mercredi vous semble difficile, essayez de trouver un petit quelque chose qui vous réjouisse ce soir. Vous avez bien travaillé cette semaine ; il est normal d’être fatigué(e)."
+      },
+      "3": {
+        "heading": "Équilibre de milieu de semaine ⚖️",
+        "body": "Un mercredi qui se passe bien est un point d'ancrage solide. Vous êtes équilibré et vous avancez. Respirez profondément : vous êtes à mi-chemin."
+      },
+      "4": {
+        "heading": "Bonheur du mercredi 🐫",
+        "body": "Vous avez atteint ce mercredi avec une attitude positive. Le week-end approche à grands pas ! Gardez cette bonne humeur en ce début de semaine."
+      },
+      "5": {
+        "heading": "Masterclass de milieu de semaine ! 🏅",
+        "body": "À mi-chemin de la semaine, vous vous sentez au top ! Vous assurez ! Profitez de ce regain d'énergie pour faire quelque chose qui vous rend vraiment heureux."
+      }
+    },
+    "Thursday": {
+      "1": {
+        "heading": "Douce étreinte du jeudi 🧸",
+        "body": "Avoir du mal à tenir le coup le jeudi est signe que la semaine a été longue. Prends soin de toi aujourd'hui. Le week-end touche à sa fin."
+      },
+      "2": {
+        "heading": "Réflexion du jeudi 🍂",
+        "body": "Si vous avez le moral à zéro aujourd'hui, repensez à tout ce que vous avez déjà accompli cette semaine. Vous avez parcouru un long chemin ; il est normal d'être fatigué."
+      },
+      "3": {
+        "heading": "On se dirige vers jeudi 🕰️",
+        "body": "Un jeudi « correct » est synonyme de travail bien fait. Vous avez travaillé dur toute la semaine. Encore un petit effort — gardez le cap !"
+      },
+      "4": {
+        "heading": "On y est presque, jeudi ! 🌅",
+        "body": "Un jeudi réussi vous prépare à un week-end fantastique. Vous sentez la ligne d'arrivée proche ! Gardez le sourire jusqu'au bout."
+      },
+      "5": {
+        "heading": "Frissons garantis jeudi ! 🎡",
+        "body": "Vous vous sentez en pleine forme à l'approche du week-end ? C'est parfait ! Terminez votre semaine en beauté avec ce formidable regain d'énergie."
+      }
+    },
+    "Friday": {
+      "1": {
+        "heading": "Énergie guérissante du vendredi ✨",
+        "body": "Les difficultés rencontrées en fin de semaine sont particulièrement éprouvantes. Sois fier(ère) d'être arrivé(e) jusqu'à vendredi. Ce week-end est consacré à ta récupération."
+      },
+      "2": {
+        "heading": "Sortie vendredi 🌊",
+        "body": "Si le vendredi vous pèse, accordez-vous une bonne nuit de repos. Vous avez porté beaucoup de choses cette semaine. Il est temps de vous en libérer."
+      },
+      "3": {
+        "heading": "Détente du vendredi 😌",
+        "body": "Un vendredi « OK » signifie que vous avez tenu le coup. La pression retombe. Profitez de cette soirée pour vous détendre et oublier le stress de la semaine."
+      },
+      "4": {
+        "heading": "Vendredi, je me sens bien ! 🎊",
+        "body": "Le Vendredi saint est la transition idéale vers le week-end. Vous avez mené à bien votre semaine. Profitez de ce moment de détente."
+      },
+      "5": {
+        "heading": "Vendredi fantastique ! 🥳",
+        "body": "Terminer la semaine en beauté, quelle victoire ! Tu as bien mérité cette joie. Que les festivités du week-end commencent sur cette lancée !"
+      }
+    },
+    "Saturday": {
+      "1": {
+        "heading": "Samedi réconfortant 🕯️",
+        "body": "Les difficultés peuvent être particulièrement pénibles le week-end. Prenez soin de vous aujourd'hui. Il n'y a pas de bonne ou de mauvaise façon de se sentir, même le samedi."
+      },
+      "2": {
+        "heading": "Douceur du samedi 💤",
+        "body": "Si le samedi vous déprime, ne vous sentez pas obligé de « profiter du week-end ». Si vous avez besoin de rester chez vous et de vous reposer, c'est un choix tout à fait valable."
+      },
+      "3": {
+        "heading": "Samedi tout simple 🍵",
+        "body": "Un samedi « correct » est une pause paisible. Pas de précipitation, pas de pression. Être simplement présent suffit aujourd'hui. Savourez ces instants de calme."
+      },
+      "4": {
+        "heading": "Samedi serein 🏖️",
+        "body": "Se sentir bien pendant son jour de congé est un vrai bonheur. Que vous soyez actif ou que vous vous reposiez, profitez pleinement de cette ambiance positive du week-end."
+      },
+      "5": {
+        "heading": "Splendeur du samedi ! 🌈",
+        "body": "Un samedi réussi, c'est magique. C'est le moment de briller et de profiter de la liberté du week-end. Créez-vous de merveilleux souvenirs aujourd'hui !"
+      }
+    },
+    "Sunday": {
+      "1": {
+        "heading": "Soin personnel du dimanche 💖",
+        "body": "Avoir des difficultés le dimanche est plus fréquent qu'on ne le pense. Prenez soin de vous avec une extrême douceur aujourd'hui. Vous méritez cette attention particulière."
+      },
+      "2": {
+        "heading": "Adieu la frénésie du dimanche 🌙",
+        "body": "Si vous avez le cafard dimanche, essayez de vous concentrer sur le moment présent plutôt que sur le travail de demain. Vous êtes en sécurité et soutenu(e) en ce moment."
+      },
+      "3": {
+        "heading": "Détente du dimanche 🍂",
+        "body": "Un dimanche tranquille est idéal pour la réflexion et la préparation. Vous êtes serein et prêt à affronter la suite. Gardez les pieds sur terre."
+      },
+      "4": {
+        "heading": "Ambiance douce du dimanche 🕊️",
+        "body": "Se sentir bien aujourd'hui instaure une ambiance sereine pour la semaine à venir. Profitez pleinement des derniers instants du week-end avec gratitude."
+      },
+      "5": {
+        "heading": "Soleil du dimanche ! 🌻",
+        "body": "Un dimanche réussi est idéal pour se ressourcer. Vous aborderez la semaine prochaine le cœur léger. Savourez cette belle énergie aujourd'hui !"
+      }
+    }
+  }
+}

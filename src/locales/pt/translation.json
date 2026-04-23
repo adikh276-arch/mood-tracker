@@ -1,0 +1,191 @@
+{
+  "tracker": {
+    "title": "Sua jornada",
+    "backToTracker": "Voltar ao rastreador",
+    "noEntries": "Ainda não há registros. Comece a registrar seu humor!",
+    "logging": "Registro...",
+    "logMood": "Humor de Log",
+    "logAnother": "Registre outro",
+    "viewHistory": "Ver histórico",
+    "howAreYouFeeling": "Como você está se sentindo?",
+    "checkInWithYourself": "Reserve um momento para se conectar consigo mesmo.",
+    "whatDayIsIt": "Que dia é hoje?",
+    "addNote": "Adicionar uma nota (opcional) ✏️",
+    "accessRequired": "Acesso necessário",
+    "accessJournal": "Acesse esta revista através do link oficial que lhe foi fornecido.",
+    "testingLocally": "Testando localmente?",
+    "appendToken": "Adicione um token à sua URL:"
+  },
+  "moods": {
+    "1": "Lutando",
+    "2": "Baixo",
+    "3": "OK",
+    "4": "Bom",
+    "5": "Ótimo"
+  },
+  "days": {
+    "Monday": "Segunda-feira",
+    "Tuesday": "Terça-feira",
+    "Wednesday": "Quarta-feira",
+    "Thursday": "Quinta-feira",
+    "Friday": "Sexta-feira",
+    "Saturday": "Sábado",
+    "Sunday": "Domingo"
+  },
+  "messages": {
+    "Monday": {
+      "1": {
+        "heading": "Seja ainda mais gentil hoje 🤍",
+        "body": "Começar a segunda-feira com dificuldades é complicado. Lembre-se de que você não precisa carregar tudo sozinho. Seja gentil consigo mesmo e saiba que o simples fato de estar presente hoje já é o suficiente."
+      },
+      "2": {
+        "heading": "Navegando suavemente pela segunda-feira ☁️",
+        "body": "Sentir-se um pouco para baixo na segunda-feira é completamente compreensível. O início da semana pode ser difícil. Vá com calma hoje."
+      },
+      "3": {
+        "heading": "Encontrando seu ritmo para a segunda-feira 🌊",
+        "body": "Uma segunda-feira \"boa\" já é uma vitória. Você está presente e começando a semana com calma. Seja gentil consigo mesmo enquanto encontra seu ritmo hoje."
+      },
+      "4": {
+        "heading": "Uma segunda-feira firme e forte! ☀️",
+        "body": "Você está começando a semana com o pé direito. Essa é uma base sólida. Mantenha esse ritmo positivo enquanto realiza suas tarefas de segunda-feira."
+      },
+      "5": {
+        "heading": "Energia imparável para esta segunda-feira! 🚀",
+        "body": "Começar a semana com um ótimo astral é um superpoder. Você estabeleceu um tom incrível que se refletirá em toda a sua semana. Use esse impulso para alcançar seus maiores objetivos hoje!"
+      }
+    },
+    "Tuesday": {
+      "1": {
+        "heading": "Enviando-te força 🫂",
+        "body": "Ter dificuldades numa terça-feira pode parecer isolador, mas você não está sozinho. Se precisar, peça ajuda e priorize a sua paz acima de tudo hoje."
+      },
+      "2": {
+        "heading": "Tenha paciência consigo mesmo hoje 🌿",
+        "body": "Se a terça-feira parecer um pouco \"para baixo\", lembre-se de que o progresso nem sempre é linear. Ouça o que seu corpo e sua mente precisam neste momento."
+      },
+      "3": {
+        "heading": "Tranquilidade de terça-feira 🍃",
+        "body": "Uma terça-feira \"boa\" é perfeitamente aceitável. Você está mantendo um ritmo constante. Reserve um momento para apreciar as pequenas vitórias de hoje."
+      },
+      "4": {
+        "heading": "Terça-feira promete ser brilhante 🌤️",
+        "body": "Um bom humor hoje é uma dádiva. Você já superou a fase difícil da segunda-feira e mantém uma perspectiva positiva. Aproveite essa energia constante!"
+      },
+      "5": {
+        "heading": "Triunfo de terça-feira! ✨",
+        "body": "Você está arrasando hoje! Levar essa energia incrível para terça-feira significa que você está construindo um impulso real. Continue brilhando!"
+      }
+    },
+    "Wednesday": {
+      "1": {
+        "heading": "Você não está sozinho(a) hoje 💜",
+        "body": "É difícil enfrentar as dificuldades no meio da semana. Permita-se desacelerar. O fim de semana chegará antes que você perceba."
+      },
+      "2": {
+        "heading": "Suavidade no meio da semana ☁️",
+        "body": "Se quarta-feira parecer um dia para baixo, tente encontrar uma pequena coisa que lhe dê ânimo para esta noite. Você trabalhou muito esta semana; é normal se sentir cansado."
+      },
+      "3": {
+        "heading": "Equilíbrio no meio da semana ⚖️",
+        "body": "Uma quarta-feira \"boa\" é um porto seguro. Você está em equilíbrio e seguindo em frente. Respire fundo — você já percorreu metade do caminho."
+      },
+      "4": {
+        "heading": "Felicidade de quarta-feira 🐫",
+        "body": "Você chegou à quarta-feira com uma energia positiva. O fim de semana está chegando! Mantenha esse espírito otimista ao cruzar a linha do meio da semana."
+      },
+      "5": {
+        "heading": "Masterclass no meio da semana! 🏅",
+        "body": "Na metade da semana e se sentindo ótimo! Você está arrasando. Aproveite esse pico de energia no meio da semana para fazer algo que te faça realmente feliz."
+      }
+    },
+    "Thursday": {
+      "1": {
+        "heading": "Um abraço carinhoso de quinta-feira 🧸",
+        "body": "Ter dificuldades numa quinta-feira é sinal de que a semana foi longa. Seja seu melhor amigo hoje. Você está quase na linha de chegada do fim de semana."
+      },
+      "2": {
+        "heading": "Reflexão de quinta-feira 🍂",
+        "body": "Se você estiver se sentindo para baixo hoje, lembre-se de tudo o que já conquistou esta semana. Você já chegou tão longe; é normal se sentir cansado."
+      },
+      "3": {
+        "heading": "Boa viagem até quinta-feira 🕰️",
+        "body": "Uma quinta-feira \"boa\" significa trabalho bem feito. Você se esforçou a semana toda. Só falta um pouco mais — mantenha esse ritmo constante."
+      },
+      "4": {
+        "heading": "Quase lá, quinta-feira! 🌅",
+        "body": "Uma boa quinta-feira prepara você para um fim de semana fantástico. Você consegue sentir a linha de chegada! Mantenha esse sorriso até o final do dia."
+      },
+      "5": {
+        "heading": "Emoção de quinta-feira! 🎡",
+        "body": "Sentindo-se ótimo com o fim de semana tão perto? Isso é o melhor! Termine a semana com força total com essa incrível dose de energia."
+      }
+    },
+    "Friday": {
+      "1": {
+        "heading": "Energia de cura para sexta-feira ✨",
+        "body": "Lidar com dificuldades no final de semana é muito pesado. Sinta orgulho de si mesmo por ter chegado até sexta-feira. Este fim de semana é para sua recuperação."
+      },
+      "2": {
+        "heading": "Lançamento de sexta-feira 🌊",
+        "body": "Se a sexta-feira lhe parecer \"baixo\", permita-se descansar esta noite. Você carregou muito peso esta semana. É hora de se livrar das coisas pesadas."
+      },
+      "3": {
+        "heading": "Sexta-feira tranquila 😌",
+        "body": "Uma sexta-feira \"boa\" significa que você conseguiu superar os desafios. A pressão está diminuindo. Aproveite a noite para relaxar e se livrar do estresse da semana."
+      },
+      "4": {
+        "heading": "Sexta-feira com uma sensação ótima! 🎊",
+        "body": "Uma \"Sexta-feira Santa\" é a ponte perfeita para o fim de semana. Você passou pela semana com sucesso. Aproveite a transição para o seu momento de lazer."
+      },
+      "5": {
+        "heading": "Sexta-feira fantástica! 🥳",
+        "body": "Encerrar a semana com um ótimo astral — que vitória! Você merece essa alegria. Que as comemorações do fim de semana comecem com essa energia positiva!"
+      }
+    },
+    "Saturday": {
+      "1": {
+        "heading": "Sábado reconfortante 🕯️",
+        "body": "Passar por dificuldades no fim de semana pode ser ainda mais difícil. Por favor, seja gentil com seu coração hoje. Não existe uma maneira certa de se sentir, nem mesmo em um sábado."
+      },
+      "2": {
+        "heading": "Suavidade de sábado 💤",
+        "body": "Se você se sentir \"mal-humorado\" no sábado, não se sinta pressionado a \"aproveitar o fim de semana\". Se precisar ficar em casa e descansar, essa é uma escolha perfeitamente válida."
+      },
+      "3": {
+        "heading": "Sábado simples 🍵",
+        "body": "Um sábado \"bom\" é um momento de paz. Sem pressa, sem pressão. Simplesmente existir já basta hoje. Aproveite os momentos de tranquilidade."
+      },
+      "4": {
+        "heading": "Sábado sereno 🏖️",
+        "body": "Sentir-se bem no seu dia de folga é uma bênção. Esteja você ativo ou descansando, aproveite cada momento dessa energia positiva de fim de semana."
+      },
+      "5": {
+        "heading": "Esplendor de sábado! 🌈",
+        "body": "Um sábado \"perfeito\" é pura magia. Este é o seu momento de brilhar e aproveitar a liberdade do fim de semana. Crie lindas lembranças hoje!"
+      }
+    },
+    "Sunday": {
+      "1": {
+        "heading": "Domingo de autocuidado 💖",
+        "body": "Ter dificuldades no domingo é mais comum do que você imagina. Trate-se com muita gentileza hoje. Você merece esse cuidado extra."
+      },
+      "2": {
+        "heading": "Domingo de terror, vá embora 🌙",
+        "body": "Se o domingo parecer 'para baixo', tente se concentrar no momento presente em vez do trabalho de amanhã. Você está seguro e tem apoio neste momento."
+      },
+      "3": {
+        "heading": "Domingo tranquilo 🍂",
+        "body": "Um domingo \"bom\" é o momento perfeito para reflexão e preparação. Você está firme e pronto para o que vier. Mantenha os pés no chão."
+      },
+      "4": {
+        "heading": "Boas vibrações de domingo 🕊️",
+        "body": "Sentir-se bem hoje estabelece um tom tranquilo para a semana que se inicia. Aproveite os últimos momentos do fim de semana com o coração grato."
+      },
+      "5": {
+        "heading": "Domingo ensolarado! 🌻",
+        "body": "Um domingo \"ótimo\" é a recarga perfeita. Você começará a próxima semana com o coração cheio. Aproveite essa energia maravilhosa hoje!"
+      }
+    }
+  }
+}

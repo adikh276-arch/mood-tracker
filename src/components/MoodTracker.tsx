@@ -1,30 +1,56 @@
 import { useState, useRef, useEffect } from "react";
-import { Check, ChevronDown, History, X, Clock } from "lucide-react";
+import { Check, ChevronDown, History, X, Clock, Globe } from "lucide-react";
 import { useAuth } from "@/contexts/TokenAuthContext";
-import { supabase } from "@/lib/supabase";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { DAYS, MESSAGES, Day } from "@/constants/messages";
-
-const MOODS = [
-  { emoji: "😊", label: "Great", value: 5, colorVar: "--mood-great" },
-  { emoji: "🙂", label: "Good", value: 4, colorVar: "--mood-good" },
-  { emoji: "😐", label: "Okay", value: 3, colorVar: "--mood-okay" },
-  { emoji: "😟", label: "Low", value: 2, colorVar: "--mood-low" },
-  { emoji: "😢", label: "Struggling", value: 1, colorVar: "--mood-struggling" },
-] as const;
-
 import { toast } from "sonner";
+import { useTranslation } from "react-i18next";
+import { sql } from "@/lib/neon";
+
+const SUPPORTED_LANGUAGES = [
+  { code: 'en', name: 'English' },
+  { code: 'es', name: 'Español' },
+  { code: 'fr', name: 'Français' },
+  { code: 'pt', name: 'Português' },
+  { code: 'de', name: 'Deutsch' },
+  { code: 'ar', name: 'العربية' },
+  { code: 'hi', name: 'हिन्दी' },
+  { code: 'bn', name: 'বাংলা' },
+  { code: 'zh-CN', name: '简体中文' },
+  { code: 'ja', name: '日本語' },
+  { code: 'id', name: 'Bahasa Indonesia' },
+  { code: 'tr', name: 'Türkçe' },
+  { code: 'vi', name: 'Tiếng Việt' },
+  { code: 'ko', name: '한국어' },
+  { code: 'ru', name: 'Русский' },
+  { code: 'it', name: 'Italiano' },
+  { code: 'pl', name: 'Polski' },
+  { code: 'th', name: 'ไทย' },
+  { code: 'tl', name: 'Filipino' }
+];
 
 const MoodTracker = () => {
+  const { t, i18n } = useTranslation();
   const { userId } = useAuth();
   const queryClient = useQueryClient();
-  const [selectedDay, setSelectedDay] = useState<Day | null>(null);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [selectedDay, setSelectedDay] = useState<Day | null>(() => {
+    const today = new Date().toLocaleDateString('en-US', { weekday: 'long' }) as Day;
+    return DAYS.includes(today) ? today : null;
+  });
+  const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
   const [selectedMood, setSelectedMood] = useState<number | null>(null);
   const [note, setNote] = useState("");
   const [logged, setLogged] = useState(false);
   const [viewHistory, setViewHistory] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const languageDropdownRef = useRef<HTMLDivElement>(null);
+
+  const MOODS = [
+    { emoji: "😊", label: t("moods.5"), value: 5, colorVar: "--mood-great" },
+    { emoji: "🙂", label: t("moods.4"), value: 4, colorVar: "--mood-good" },
+    { emoji: "😐", label: t("moods.3"), value: 3, colorVar: "--mood-okay" },
+    { emoji: "😟", label: t("moods.2"), value: 2, colorVar: "--mood-low" },
+    { emoji: "😢", label: t("moods.1"), value: 1, colorVar: "--mood-struggling" },
+  ];
 
   const selectedMoodData = MOODS.find((m) => m.value === selectedMood);
 
@@ -33,18 +59,18 @@ const MoodTracker = () => {
     queryKey: ['moods', userId],
     queryFn: async () => {
       console.log("Fetching history for user ID:", userId);
-      const { data, error } = await supabase
-        .from('mood_entries')
-        .select('*')
-        .eq('user_id', userId)
-        .order('logged_at', { ascending: false });
-
-      if (error) {
-        console.error("Supabase fetch error:", error);
+      try {
+        const data = await sql`
+          SELECT * FROM mood_entries 
+          WHERE user_id = ${userId} 
+          ORDER BY logged_at DESC
+        `;
+        return data;
+      } catch (error: any) {
+        console.error("Neon fetch error:", error);
         toast.error(`Fetch failed: ${error.message}`);
         throw error;
       }
-      return data;
     },
     enabled: !!userId,
   });
@@ -52,8 +78,24 @@ const MoodTracker = () => {
   // Log Mutation
   const logMutation = useMutation({
     mutationFn: async (entry: any) => {
-      const { error } = await supabase.from('mood_entries').insert(entry);
-      if (error) throw error;
+      try {
+        // Ensure user exists before inserting mood
+        await sql`
+          INSERT INTO users (id) 
+          VALUES (${entry.user_id}) 
+          ON CONFLICT (id) DO NOTHING
+        `;
+
+        const result = await sql`
+          INSERT INTO mood_entries (user_id, mood_value, mood_label, day_name, note)
+          VALUES (${entry.user_id}, ${entry.mood_value}, ${entry.mood_label}, ${entry.day_name}, ${entry.note})
+          RETURNING *
+        `;
+        return result[0];
+      } catch (error: any) {
+        console.error("Neon insert error:", error);
+        throw error;
+      }
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['moods', userId] });
@@ -61,15 +103,16 @@ const MoodTracker = () => {
       toast.success("Mood logged successfully!");
     },
     onError: (error: any) => {
-      console.error("Failed to log mood to Supabase:", error);
+      console.error("Failed to log mood to Neon:", error);
       toast.error(`Failed to save: ${error.message || "Database connection error"}`);
     }
   });
 
+
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
-        setDropdownOpen(false);
+      if (languageDropdownRef.current && !languageDropdownRef.current.contains(e.target as Node)) {
+        setLanguageDropdownOpen(false);
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
@@ -89,21 +132,25 @@ const MoodTracker = () => {
   };
 
   const handleReset = () => {
-    setSelectedDay(null);
+    const today = new Date().toLocaleDateString('en-US', { weekday: 'long' }) as Day;
+    setSelectedDay(DAYS.includes(today) ? today : null);
     setSelectedMood(null);
     setNote("");
     setLogged(false);
     setViewHistory(false);
   };
 
-  const personalMessage = selectedDay && selectedMood ? MESSAGES[selectedDay]?.[selectedMood] : null;
+  const personalMessage = selectedDay && selectedMood ? {
+    heading: t(`messages.${selectedDay}.${selectedMood}.heading`),
+    body: t(`messages.${selectedDay}.${selectedMood}.body`)
+  } : null;
 
   if (viewHistory) {
     return (
       <div className="flex min-h-screen items-center justify-center px-4 py-8">
         <div className="flex w-full max-w-md flex-col gap-6 animate-fade-in">
           <div className="flex items-center justify-between">
-            <h2 className="text-2xl font-black text-foreground">Your Journey</h2>
+            <h2 className="text-2xl font-black text-foreground">{t("tracker.title")}</h2>
             <button onClick={() => setViewHistory(false)} className="rounded-full p-2 hover:bg-secondary transition-colors">
               <X className="h-6 w-6" />
             </button>
@@ -120,14 +167,14 @@ const MoodTracker = () => {
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
                       <span className="text-2xl">{MOODS.find(m => m.value === entry.mood_value)?.emoji}</span>
-                      <span className="font-bold text-foreground">{entry.mood_label}</span>
+                      <span className="font-bold text-foreground">{t(`moods.${entry.mood_value}`)}</span>
                     </div>
                     <span className="text-xs font-medium text-muted-foreground flex items-center gap-1">
                       <Clock className="h-3 w-3" />
                       {new Date(entry.logged_at).toLocaleDateString()}
                     </span>
                   </div>
-                  <p className="text-xs font-semibold text-primary">{entry.day_name}</p>
+                  <p className="text-xs font-semibold text-primary">{t(`days.${entry.day_name}`)}</p>
                   {entry.note && (
                     <p className="text-sm text-muted-foreground italic mt-1 border-l-2 border-primary/20 pl-3 py-1 bg-secondary/30 rounded-r-lg">
                       "{entry.note}"
@@ -137,7 +184,7 @@ const MoodTracker = () => {
               ))
             ) : (
               <div className="text-center py-10 px-4 rounded-3xl bg-secondary/20">
-                <p className="text-muted-foreground font-medium">No entries yet. Start logging your mood!</p>
+                <p className="text-muted-foreground font-medium">{t("tracker.noEntries")}</p>
               </div>
             )}
           </div>
@@ -146,7 +193,7 @@ const MoodTracker = () => {
             onClick={() => setViewHistory(false)}
             className="w-full rounded-full bg-primary py-4 font-bold text-primary-foreground shadow-lg hover:scale-[1.02] transition-transform"
           >
-            Back to Tracker
+            {t("tracker.backToTracker")}
           </button>
         </div>
       </div>
@@ -172,7 +219,7 @@ const MoodTracker = () => {
           <div className="mt-2 flex items-center gap-2 rounded-full bg-secondary px-4 py-2">
             <span className="text-xl">{selectedMoodData?.emoji}</span>
             <span className="text-sm font-semibold text-secondary-foreground">
-              {selectedMoodData?.label} · {selectedDay}
+              {selectedMoodData?.label} · {selectedDay ? t(`days.${selectedDay}`) : ""}
             </span>
           </div>
           <div className="flex flex-col w-full gap-3 mt-4">
@@ -180,14 +227,14 @@ const MoodTracker = () => {
               onClick={handleReset}
               className="w-full rounded-full bg-primary px-8 py-3 font-bold text-primary-foreground shadow-lg shadow-primary/25 transition-all hover:scale-105 active:scale-95"
             >
-              Log Another
+              {t("tracker.logAnother")}
             </button>
             <button
               onClick={() => setViewHistory(true)}
               className="w-full flex items-center justify-center gap-2 py-3 text-sm font-bold text-muted-foreground hover:text-foreground transition-colors"
             >
               <History className="h-4 w-4" />
-              View History
+              {t("tracker.viewHistory")}
             </button>
           </div>
         </div>
@@ -198,13 +245,45 @@ const MoodTracker = () => {
   return (
     <div className="flex min-h-screen items-center justify-center px-4">
       <div className="flex w-full max-w-md flex-col items-center gap-7">
-        <button
-          onClick={() => setViewHistory(true)}
-          className="absolute top-6 right-6 flex h-12 w-12 items-center justify-center rounded-full bg-card border border-input shadow-sm text-muted-foreground hover:text-primary hover:border-primary transition-all active:scale-90"
-          title="History"
-        >
-          <History className="h-6 w-6" />
-        </button>
+
+        <div className="absolute top-6 right-6 flex items-center gap-3">
+          {/* Language Switcher */}
+          <div className="relative" ref={languageDropdownRef}>
+            <button
+              onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-card border border-input shadow-sm text-muted-foreground hover:text-primary hover:border-primary transition-all active:scale-90"
+            >
+              <Globe className="h-5 w-5" />
+            </button>
+            {languageDropdownOpen && (
+              <div className="absolute right-0 mt-2 w-40 bg-card border border-input shadow-xl rounded-xl overflow-hidden z-50 max-h-64 overflow-y-auto">
+                {SUPPORTED_LANGUAGES.map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => {
+                      i18n.changeLanguage(lang.code);
+                      const url = new URL(window.location.href);
+                      url.searchParams.set('lang', lang.code);
+                      window.history.pushState({}, '', url);
+                      setLanguageDropdownOpen(false);
+                    }}
+                    className={`w-full text-left px-4 py-2 text-sm hover:bg-secondary transition-colors ${i18n.language === lang.code ? 'bg-primary/10 text-primary font-bold' : 'text-foreground'}`}
+                  >
+                    {lang.name}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <button
+            onClick={() => setViewHistory(true)}
+            className="flex h-12 w-12 items-center justify-center rounded-full bg-card border border-input shadow-sm text-muted-foreground hover:text-primary hover:border-primary transition-all active:scale-90"
+            title="History"
+          >
+            <History className="h-6 w-6" />
+          </button>
+        </div>
 
         {/* Floating emoji decoration */}
         <div className="animate-float text-5xl pt-4">🧠</div>
@@ -212,46 +291,18 @@ const MoodTracker = () => {
         {/* Header */}
         <div className="text-center">
           <h1 className="text-3xl font-black text-foreground tracking-tight">
-            How are you feeling?
+            {t("tracker.howAreYouFeeling")}
           </h1>
           <p className="mt-1.5 text-muted-foreground font-medium">
-            Take a moment to check in with yourself
+            {t("tracker.checkInWithYourself")}
           </p>
         </div>
 
-        {/* Day Dropdown */}
-        <div ref={dropdownRef} className="relative w-full max-w-xs">
-          <button
-            onClick={() => setDropdownOpen(!dropdownOpen)}
-            className="flex w-full items-center justify-between rounded-2xl border border-input bg-card px-5 py-3.5 text-sm font-semibold shadow-sm transition-all hover:shadow-md focus:outline-none focus:ring-2 focus:ring-ring"
-          >
-            <span className={selectedDay ? "text-foreground" : "text-muted-foreground"}>
-              {selectedDay ? `📅 ${selectedDay}` : "What day is it?"}
-            </span>
-            <ChevronDown
-              className={`h-4 w-4 text-muted-foreground transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""
-                }`}
-            />
-          </button>
-          {dropdownOpen && (
-            <div className="absolute left-0 right-0 top-full z-50 mt-2 overflow-hidden rounded-2xl border border-input bg-card shadow-xl">
-              {DAYS.map((day) => (
-                <button
-                  key={day}
-                  onClick={() => {
-                    setSelectedDay(day);
-                    setDropdownOpen(false);
-                  }}
-                  className={`flex w-full items-center px-5 py-3 text-sm font-medium transition-colors hover:bg-secondary ${selectedDay === day
-                    ? "bg-primary/10 text-primary font-bold"
-                    : "text-foreground"
-                    }`}
-                >
-                  {day}
-                </button>
-              ))}
-            </div>
-          )}
+        {/* Current Day Display */}
+        <div className="flex w-full max-w-xs items-center justify-center rounded-2xl border border-input bg-card px-5 py-3.5 text-sm font-semibold shadow-sm">
+          <span className="text-foreground">
+            {selectedDay ? `📅 ${t(`days.${selectedDay}`)}` : ""}
+          </span>
         </div>
 
         {/* Mood Options */}
@@ -292,7 +343,7 @@ const MoodTracker = () => {
         {/* Note Field */}
         <input
           type="text"
-          placeholder="Add a note (optional) ✏️"
+          placeholder={t("tracker.addNote")}
           value={note}
           onChange={(e) => setNote(e.target.value)}
           className="w-full max-w-xs rounded-2xl border border-input bg-card px-5 py-3.5 text-sm text-foreground shadow-sm placeholder:text-muted-foreground outline-none transition-all focus:ring-2 focus:ring-ring focus:shadow-md"
@@ -305,7 +356,7 @@ const MoodTracker = () => {
             disabled={selectedMood === null || selectedDay === null || logMutation.isPending}
             className="rounded-full bg-primary px-10 py-3 font-bold text-primary-foreground shadow-lg shadow-primary/25 transition-all hover:scale-105 hover:shadow-xl hover:shadow-primary/30 active:scale-95 disabled:opacity-35 disabled:shadow-none disabled:hover:scale-100"
           >
-            {logMutation.isPending ? "Logging..." : "Log Mood"}
+            {logMutation.isPending ? t("tracker.logging") : t("tracker.logMood")}
           </button>
         </div>
       </div>

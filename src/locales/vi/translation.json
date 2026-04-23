@@ -1,0 +1,191 @@
+{
+  "tracker": {
+    "title": "Hành trình của bạn",
+    "backToTracker": "Trở lại Trình theo dõi",
+    "noEntries": "Chưa có bài viết nào. Hãy bắt đầu ghi lại tâm trạng của bạn!",
+    "logging": "Đang đăng nhập...",
+    "logMood": "Nhật ký tâm trạng",
+    "logAnother": "Đăng nhập vào một trang khác",
+    "viewHistory": "Xem lịch sử",
+    "howAreYouFeeling": "Bạn cảm thấy thế nào?",
+    "checkInWithYourself": "Hãy dành chút thời gian để tự kiểm tra bản thân mình.",
+    "whatDayIsIt": "Hôm nay là ngày gì?",
+    "addNote": "Thêm ghi chú (tùy chọn) ✏️",
+    "accessRequired": "Cần có quyền truy cập",
+    "accessJournal": "Vui lòng truy cập tạp chí này thông qua liên kết chính thức được cung cấp cho bạn.",
+    "testingLocally": "Đang thử nghiệm cục bộ?",
+    "appendToken": "Thêm mã token vào URL của bạn:"
+  },
+  "moods": {
+    "1": "Đang gặp khó khăn",
+    "2": "Thấp",
+    "3": "Đồng ý",
+    "4": "Tốt",
+    "5": "Tuyệt"
+  },
+  "days": {
+    "Monday": "Thứ hai",
+    "Tuesday": "Thứ ba",
+    "Wednesday": "Thứ Tư",
+    "Thursday": "Thứ năm",
+    "Friday": "Thứ sáu",
+    "Saturday": "Thứ bảy",
+    "Sunday": "Chủ nhật"
+  },
+  "messages": {
+    "Monday": {
+      "1": {
+        "heading": "Hôm nay hãy tử tế hơn nữa nhé 🤍",
+        "body": "Cảm thấy mệt mỏi vào ngày thứ Hai thật khó khăn. Hãy nhớ rằng bạn không cần phải gánh vác tất cả. Hãy nhẹ nhàng với bản thân và biết rằng việc bạn có mặt ngày hôm nay là đủ rồi."
+      },
+      "2": {
+        "heading": "Dạo bước nhẹ nhàng trong ngày thứ Hai ☁️",
+        "body": "Cảm thấy hơi \"buồn\" vào sáng thứ Hai là điều hoàn toàn dễ hiểu. Khởi đầu tuần có thể khá nặng nề. Hãy cứ từ từ mà làm việc hôm nay."
+      },
+      "3": {
+        "heading": "Tìm kiếm nguồn năng lượng tích cực cho ngày thứ Hai của bạn 🌊",
+        "body": "Một ngày thứ Hai \"ổn\" đã là một thành công rồi. Bạn đã bắt đầu tuần mới một cách nhẹ nhàng. Hãy cho bản thân thời gian để tìm được nhịp điệu của mình hôm nay."
+      },
+      "4": {
+        "heading": "Chúc một ngày thứ Hai vững vàng và mạnh mẽ! ☀️",
+        "body": "Bạn đang khởi đầu tuần mới với một tín hiệu \"Tốt\". Đó là một nền tảng vững chắc. Hãy duy trì đà tích cực này khi bạn hoàn thành các nhiệm vụ của ngày thứ Hai."
+      },
+      "5": {
+        "heading": "Năng lượng ngày thứ Hai bất diệt! 🚀",
+        "body": "Bắt đầu tuần mới với tâm trạng \"Tuyệt vời\" là một sức mạnh phi thường. Bạn đã tạo ra một nguồn năng lượng tích cực sẽ lan tỏa suốt cả tuần. Hãy tận dụng động lực này để chinh phục những mục tiêu lớn nhất của bạn ngay hôm nay!"
+      }
+    },
+    "Tuesday": {
+      "1": {
+        "heading": "Gửi đến bạn nguồn sức mạnh 🫂",
+        "body": "Cảm giác khó khăn vào ngày thứ Ba có thể khiến bạn cảm thấy cô đơn, nhưng bạn không hề đơn độc. Hãy liên hệ nếu cần và ưu tiên sự bình yên của bản thân lên trên hết trong ngày hôm nay."
+      },
+      "2": {
+        "heading": "Hãy kiên nhẫn với chính mình hôm nay 🌿",
+        "body": "Nếu thứ Ba khiến bạn cảm thấy hơi \"chán nản\", hãy nhớ rằng sự tiến bộ không phải lúc nào cũng diễn ra theo đường thẳng. Hãy lắng nghe những gì cơ thể và tâm trí bạn cần ngay lúc này."
+      },
+      "3": {
+        "heading": "Ngày thứ Ba yên bình 🍃",
+        "body": "Một ngày thứ Ba \"ổn\" là hoàn toàn tốt. Bạn đang giữ nhịp độ ổn định. Hãy dành chút thời gian để trân trọng những thành công nhỏ trong ngày hôm nay."
+      },
+      "4": {
+        "heading": "Thứ Ba hứa hẹn tươi sáng! 🌤️",
+        "body": "Tâm trạng tốt hôm nay là một món quà. Bạn đã vượt qua được giai đoạn khó khăn của ngày thứ Hai và đang duy trì một thái độ tích cực. Hãy tận hưởng nguồn năng lượng ổn định này!"
+      },
+      "5": {
+        "heading": "Chiến thắng ngày thứ Ba! ✨",
+        "body": "Hôm nay bạn thật sự tràn đầy năng lượng! Mang theo nguồn năng lượng tuyệt vời này sang ngày thứ Ba chứng tỏ bạn đang tạo được đà phát triển mạnh mẽ. Cứ tiếp tục tỏa sáng nhé!"
+      }
+    },
+    "Wednesday": {
+      "1": {
+        "heading": "Hôm nay bạn không cô đơn đâu 💜",
+        "body": "Thật khó khăn khi phải vật lộn giữa tuần. Hãy cho phép bản thân mình thư giãn. Cuối tuần sẽ đến nhanh thôi."
+      },
+      "2": {
+        "heading": "Cảm giác dịu nhẹ giữa tuần ☁️",
+        "body": "Nếu bạn cảm thấy \"buồn bã\" vào thứ Tư, hãy cố gắng tìm một điều nhỏ nhặt để mong chờ vào tối nay. Bạn đã làm việc chăm chỉ trong tuần này; cảm thấy mệt mỏi là điều bình thường."
+      },
+      "3": {
+        "heading": "Cân bằng giữa tuần ⚖️",
+        "body": "Một ngày thứ Tư \"ổn\" là điểm tựa vững chắc. Bạn đang cân bằng và tiến về phía trước. Hít thở sâu - bạn đã đi được nửa chặng đường rồi."
+      },
+      "4": {
+        "heading": "Niềm vui giữa tuần 🐫",
+        "body": "Bạn đã vượt qua ngày thứ Tư với một tâm trạng \"tốt\". Cuối tuần đang đến gần! Hãy giữ vững tinh thần tích cực đó khi bước qua vạch giữa tuần."
+      },
+      "5": {
+        "heading": "Buổi học chuyên sâu giữa tuần! 🏅",
+        "body": "Đã giữa tuần trôi qua và bạn cảm thấy \"Tuyệt vời\"! Bạn đang làm rất tốt. Hãy tận dụng thời điểm giữa tuần đầy hứng khởi này để làm điều gì đó thực sự khiến bạn hạnh phúc."
+      }
+    },
+    "Thursday": {
+      "1": {
+        "heading": "Lời chúc ngày thứ Năm dịu dàng 🧸",
+        "body": "Cảm thấy mệt mỏi vào thứ Năm là dấu hiệu cho thấy tuần vừa qua thật dài. Hãy là người bạn tốt nhất của chính mình hôm nay. Bạn sắp đến đích cuối tuần rồi đấy."
+      },
+      "2": {
+        "heading": "Suy ngẫm ngày thứ Năm 🍂",
+        "body": "Nếu hôm nay bạn cảm thấy \"buồn bã\", hãy nhìn lại những gì bạn đã hoàn thành trong tuần này. Bạn đã tiến bộ rất nhiều; cảm thấy mệt mỏi là điều bình thường."
+      },
+      "3": {
+        "heading": "Tiếp tục ổn định đến thứ Năm 🕰️",
+        "body": "Một ngày thứ Năm \"ổn\" là dấu hiệu của việc hoàn thành tốt công việc. Bạn đã nỗ lực cả tuần. Chỉ còn một chút nữa thôi - hãy giữ vững nhịp độ này."
+      },
+      "4": {
+        "heading": "Sắp đến thứ Năm rồi! 🌅",
+        "body": "Một ngày thứ Năm \"tốt lành\" sẽ giúp bạn có một cuối tuần tuyệt vời. Bạn có thể cảm nhận được vạch đích rồi! Hãy giữ nụ cười ấy cho đến khi kết thúc ngày hôm nay."
+      },
+      "5": {
+        "heading": "Niềm vui ngày thứ Năm! 🎡",
+        "body": "Cảm thấy \"Tuyệt vời\" khi cuối tuần đã cận kề? Vậy thì tốt nhất rồi! Hãy kết thúc tuần của bạn thật mạnh mẽ với nguồn năng lượng dồi dào này."
+      }
+    },
+    "Friday": {
+      "1": {
+        "heading": "Năng lượng chữa lành ngày thứ Sáu ✨",
+        "body": "Cảm giác mệt mỏi vào cuối tuần quả là khó chịu. Hãy tự hào về bản thân vì đã vượt qua được đến thứ Sáu. Cuối tuần này là để bạn hồi phục sức khỏe."
+      },
+      "2": {
+        "heading": "Phát hành vào thứ Sáu 🌊",
+        "body": "Nếu thứ Sáu khiến bạn cảm thấy \"buồn bã\", hãy để bản thân được nghỉ ngơi tối nay. Bạn đã gánh vác rất nhiều việc trong tuần này. Đã đến lúc đặt những gánh nặng đó xuống."
+      },
+      "3": {
+        "heading": "Ngày thứ Sáu thư thái 😌",
+        "body": "Một ngày thứ Sáu \"ổn\" có nghĩa là bạn đã vượt qua được tuần làm việc. Áp lực đang giảm bớt. Hãy dành tối nay để thư giãn và xua tan căng thẳng của cả tuần."
+      },
+      "4": {
+        "heading": "Thứ Sáu thật tuyệt vời! 🎊",
+        "body": "Một ngày thứ Sáu \"tốt lành\" là cầu nối hoàn hảo cho cuối tuần. Bạn đã vượt qua tuần làm việc một cách thành công. Hãy tận hưởng khoảng thời gian chuyển tiếp sang thời gian thư giãn của riêng mình."
+      },
+      "5": {
+        "heading": "Một ngày thứ Sáu tuyệt vời! 🥳",
+        "body": "Kết thúc tuần với tâm trạng \"Tuyệt vời\" — thật là một chiến thắng! Bạn xứng đáng với niềm vui này. Hãy bắt đầu những hoạt động cuối tuần với nguồn năng lượng tích cực này!"
+      }
+    },
+    "Saturday": {
+      "1": {
+        "heading": "Một ngày thứ Bảy ấm áp 🕯️",
+        "body": "Cảm giác mệt mỏi vào cuối tuần có thể khó chịu hơn bình thường. Hãy nhẹ nhàng với trái tim mình hôm nay. Không có cách nào đúng hay sai để cảm nhận, ngay cả vào thứ Bảy."
+      },
+      "2": {
+        "heading": "Sự dịu nhẹ của ngày thứ Bảy 💤",
+        "body": "Nếu bạn cảm thấy \"buổi tối thứ Bảy\" không vui, đừng cảm thấy áp lực phải \"tận hưởng cuối tuần\". Nếu bạn cần ở nhà và nghỉ ngơi, đó là một lựa chọn hoàn toàn hợp lý."
+      },
+      "3": {
+        "heading": "Ngày thứ Bảy đơn giản 🍵",
+        "body": "Một ngày thứ Bảy \"ổn\" là một ngày bình yên. Không vội vã, không áp lực. Chỉ cần hiện diện là đủ trong ngày hôm nay. Hãy tận hưởng những khoảnh khắc tĩnh lặng."
+      },
+      "4": {
+        "heading": "Ngày thứ Bảy thanh bình 🏖️",
+        "body": "Cảm thấy \"tốt\" vào ngày nghỉ là một điều may mắn. Cho dù bạn hoạt động hay nghỉ ngơi, hãy tận hưởng từng khoảnh khắc của bầu không khí cuối tuần tích cực này."
+      },
+      "5": {
+        "heading": "Ngày thứ Bảy tuyệt vời! 🌈",
+        "body": "Một ngày thứ Bảy \"tuyệt vời\" thực sự là điều kỳ diệu. Đây là thời điểm để bạn tỏa sáng và tận hưởng sự tự do của cuối tuần. Hãy tạo nên những kỷ niệm đẹp hôm nay!"
+      }
+    },
+    "Sunday": {
+      "1": {
+        "heading": "Ngày Chủ Nhật Tự Chăm Sóc Bản Thân 💖",
+        "body": "Cảm thấy mệt mỏi vào ngày Chủ nhật phổ biến hơn bạn nghĩ. Hãy đối xử với bản thân thật dịu dàng hôm nay. Bạn xứng đáng được chăm sóc đặc biệt."
+      },
+      "2": {
+        "heading": "Nỗi lo lắng ngày Chủ nhật, hãy biến mất! 🌙",
+        "body": "Nếu bạn cảm thấy \"buồn bã\" vào Chủ nhật, hãy cố gắng tập trung vào hiện tại thay vì công việc ngày mai. Bạn đang an toàn và được hỗ trợ ngay lúc này."
+      },
+      "3": {
+        "heading": "Ngày Chủ Nhật yên bình 🍂",
+        "body": "Một ngày Chủ nhật \"ổn\" là thời điểm hoàn hảo để suy ngẫm và chuẩn bị. Bạn đang vững vàng và sẵn sàng cho bất cứ điều gì sắp tới. Hãy giữ vững lập trường."
+      },
+      "4": {
+        "heading": "Không khí ngày Chủ nhật dịu nhẹ 🕊️",
+        "body": "Cảm giác \"tốt\" hôm nay sẽ tạo nên một tâm trạng bình yên cho tuần tới. Hãy tận hưởng những phút cuối cùng của cuối tuần với một trái tim biết ơn."
+      },
+      "5": {
+        "heading": "Ngày Chủ Nhật nắng đẹp! 🌻",
+        "body": "Một ngày Chủ nhật tuyệt vời là thời gian để bạn nạp lại năng lượng. Bạn sẽ bước vào tuần tới với một trái tim tràn đầy niềm vui. Hãy tận hưởng nguồn năng lượng tuyệt vời này hôm nay!"
+      }
+    }
+  }
+}

@@ -11,8 +11,9 @@ build
 .git
 .gitignore
 
-# Environment variables
-.env
+# Environment variables (Safety First!)
+# Only allow standard .env if you strictly commit public config there.
+# Always ignore local overrides containing secrets.
 .env.local
 .env.development.local
 .env.test.local
@@ -37,7 +38,8 @@ coverage
 .DS_Store
 Thumbs.db
 
-# Docker
+# Optional: Ignore Docker config files themselves
+# to prevent cache invalidation if only the config changes
 Dockerfile
 docker-compose.yml
 README.md

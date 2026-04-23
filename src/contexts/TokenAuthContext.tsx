@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { supabase } from '@/lib/supabase';
+import { sql } from '@/lib/neon';
 
 interface AuthContextType {
     userId: number | null;
@@ -14,124 +14,106 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const [loading, setLoading] = useState(true);
     const [isMock, setIsMock] = useState(false);
 
-    const [loadingMessage, setLoadingMessage] = useState("Preparing your journal...");
-
     useEffect(() => {
-        const messages = [
-            "Setting the mood...",
-            "Getting things ready for you...",
-            "Personalizing your experience...",
-            "Creating a safe space...",
-            "Almost there..."
-        ];
-        let i = 0;
-        const interval = setInterval(() => {
-            i = (i + 1) % messages.length;
-            setLoadingMessage(messages[i]);
-        }, 1500);
+        const validateToken = async () => {
+            try {
+                // Check URL parameters for token
+                const urlParams = new URLSearchParams(window.location.search);
+                const token = urlParams.get('token');
+                
+                if (token) {
+                    sessionStorage.setItem('authToken', token);
+                    // Immediately clean the URL
+                    window.history.replaceState({}, document.title, window.location.pathname);
+                }
 
-        const handleAuth = async () => {
-            // 1. Remove Mock Mode (Activating Real Auth)
-            // Real auth will now be required even on localhost
+                const storedToken = sessionStorage.getItem('authToken');
 
-            // 2. Check sessionStorage
-            const savedUserId = sessionStorage.getItem('user_id');
-            if (savedUserId) {
-                setUserId(parseInt(savedUserId, 10));
-                setLoading(false);
-                return;
-            }
+                // Local development mockup fallback
+                if (!storedToken && window.location.hostname === 'localhost') {
+                    console.log('No token found on localhost, using mock user 1');
+                    setUserId(1);
+                    setIsMock(true);
+                    setLoading(false);
+                    return;
+                }
 
-            // 3. Extract Token from URL
-            const params = new URLSearchParams(window.location.search);
-            const token = params.get('token');
+                if (!storedToken) {
+                    console.warn('No authentication token found');
+                    window.location.href = '/token';
+                    return;
+                }
 
-            if (token) {
+                console.log('Validating token:', storedToken);
+
+                // Validate token via API
                 try {
-                    // 4. Validate Token via MantraCare API
                     const response = await fetch('https://api.mantracare.com/user/user-info', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ token }),
+                        body: JSON.stringify({ token: storedToken })
                     });
 
-                    if (response.ok) {
-                        const data = await response.json();
-                        const id = data.user_id;
-
-                        if (id) {
-                            // 5. Initialize/Cleanup
-                            sessionStorage.setItem('user_id', id.toString());
-                            await initializeUser(id);
-                            setUserId(id);
-
-                            // 6. Clean URL
-                            const newUrl = window.location.origin + window.location.pathname;
-                            window.history.replaceState({}, document.title, newUrl);
-                        } else {
-                            throw new Error("User ID missing from response");
-                        }
-                    } else {
-                        throw new Error("Auth failed");
+                    if (!response.ok) {
+                        const errorText = await response.text();
+                        console.error(`API Error (${response.status}):`, errorText);
+                        throw new Error(`Auth API returned ${response.status}`);
                     }
-                } catch (error) {
-                    console.error("Auth Handshake Failed:", error);
-                    window.location.href = '/token';
-                } finally {
-                    setLoading(false);
+
+                    const data = await response.json();
+                    console.log('API Response:', data);
+                    
+                    if (data && data.user_id) {
+                        const validatedUserId = parseInt(data.user_id);
+                        setUserId(validatedUserId);
+                        setLoading(false);
+
+                        // User Initialization (Upsert)
+                        await sql`
+                            INSERT INTO users (id) 
+                            VALUES (${validatedUserId}) 
+                            ON CONFLICT (id) DO NOTHING
+                        `;
+                    } else {
+                        throw new Error('Invalid user data returned from API');
+                    }
+                } catch (apiError) {
+                    console.error('API Validation failed, checking for mock fallback:', apiError);
+                    
+                    if (window.location.hostname === 'localhost') {
+                        console.warn('API failed on localhost, falling back to mock user 1');
+                        setUserId(1);
+                        setIsMock(true);
+                    } else {
+                        throw apiError;
+                    }
                 }
-            } else {
-                // No token, no session -> Don't redirect, just stop loading
+            } catch (error) {
+                console.error('Authentication error:', error);
+                sessionStorage.removeItem('authToken');
+                window.location.href = '/token';
+            } finally {
                 setLoading(false);
             }
         };
 
-        const initializeUser = async (id: number) => {
-            // Upsert user in Supabase to ensure they exist for FK constraints
-            const { error } = await supabase
-                .from('users')
-                .upsert({ id }, { onConflict: 'id' });
-
-            if (error) {
-                console.error("Error initializing user in Supabase:", error);
-                throw error;
-            }
-        };
-
-        handleAuth();
-        return () => clearInterval(interval);
+        validateToken();
     }, []);
+
+    if (loading) {
+        return (
+            <div className="flex min-h-screen items-center justify-center bg-background">
+                <div className="flex flex-col items-center gap-4">
+                    <div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent"></div>
+                    <p className="text-sm font-medium text-muted-foreground animate-pulse">Preparing...</p>
+                </div>
+            </div>
+        );
+    }
 
     return (
         <AuthContext.Provider value={{ userId, loading, isMock }}>
-            {loading ? (
-                <div className="flex min-h-screen items-center justify-center bg-background">
-                    <div className="flex flex-col items-center gap-4">
-                        <div className="h-12 w-12 animate-spin rounded-full border-4 border-primary border-t-transparent shadow-lg"></div>
-                        <p className="text-sm font-bold text-foreground animate-pulse tracking-wide italic">{loadingMessage}</p>
-                    </div>
-                </div>
-            ) : !userId ? (
-                <div className="flex min-h-screen items-center justify-center bg-background px-4 text-center">
-                    <div className="flex max-w-sm flex-col items-center gap-6 animate-fade-in">
-                        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-destructive/10">
-                            <span className="text-4xl">🔐</span>
-                        </div>
-                        <div className="space-y-2">
-                            <h1 className="text-2xl font-black text-foreground">Access Required</h1>
-                            <p className="text-muted-foreground leading-relaxed">
-                                Please access this journal through the official link provided to you.
-                            </p>
-                        </div>
-                        <div className="w-full rounded-2xl bg-secondary/50 p-4 text-xs text-muted-foreground">
-                            <p className="font-semibold mb-1">Testing locally?</p>
-                            <p>Append a token to your URL: <br /> <code className="text-primary font-bold">?token=your_test_token</code></p>
-                        </div>
-                    </div>
-                </div>
-            ) : (
-                children
-            )}
+            {children}
         </AuthContext.Provider>
     );
 };

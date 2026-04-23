@@ -1,0 +1,191 @@
+{
+  "tracker": {
+    "title": "Ang Iyong Paglalakbay",
+    "backToTracker": "Balik sa Tagasubaybay",
+    "noEntries": "Wala pang mga entry. Simulan nang i-log ang iyong mood!",
+    "logging": "Nagtatala...",
+    "logMood": "Mood ng Pag-log",
+    "logAnother": "Mag-log ng Isa Pa",
+    "viewHistory": "Tingnan ang Kasaysayan",
+    "howAreYouFeeling": "Kumusta ang pakiramdam mo?",
+    "checkInWithYourself": "Maglaan ng ilang sandali para suriin ang iyong sarili",
+    "whatDayIsIt": "Anong araw na?",
+    "addNote": "Magdagdag ng tala (opsyonal) ✏️",
+    "accessRequired": "Kinakailangan ang Pag-access",
+    "accessJournal": "Paki-access ang journal na ito sa pamamagitan ng opisyal na link na ibinigay sa iyo.",
+    "testingLocally": "Lokal na nagte-test?",
+    "appendToken": "Magdagdag ng token sa iyong URL:"
+  },
+  "moods": {
+    "1": "Nahihirapan",
+    "2": "Mababa",
+    "3": "Sige",
+    "4": "Mabuti",
+    "5": "Mahusay"
+  },
+  "days": {
+    "Monday": "Lunes",
+    "Tuesday": "Martes",
+    "Wednesday": "Miyerkules",
+    "Thursday": "Huwebes",
+    "Friday": "Biyernes",
+    "Saturday": "Sabado",
+    "Sunday": "Linggo"
+  },
+  "messages": {
+    "Monday": {
+      "1": {
+        "heading": "Maging Mas Mabait Ngayon 🤍",
+        "body": "Mahirap ang magtiis sa Lunes. Tandaan mo lang na hindi mo kailangang pasanin lahat. Maging mahinahon sa sarili mo at tandaan na sapat na ang pagpunta ngayon."
+      },
+      "2": {
+        "heading": "Dahan-dahang Paglalakbay sa Lunes ☁️",
+        "body": "Naiintindihan naman kung medyo \"mababa\" ang pakiramdam tuwing Lunes. Maaaring maging mabigat ang simula ng linggo. Gawin ang mga bagay-bagay nang paunti-unti ngayon."
+      },
+      "3": {
+        "heading": "Paghahanap ng Daloy ng Iyong Lunes 🌊",
+        "body": "Panalo ang isang Lunes na 'Okay'. Madali ka nang makakarating at makakapagpahinga sa linggo. Bigyan ang iyong sarili ng biyaya habang hinahanap mo ang iyong ritmo ngayon."
+      },
+      "4": {
+        "heading": "Matatag at Malakas na Lunes! ☀️",
+        "body": "Sinisimulan mo ang linggo nang may 'Maganda' na mensahe. Matibay na pundasyon iyan. Panatilihin ang positibong momentum na ito habang nililibot mo ang iyong mga gawain tuwing Lunes."
+      },
+      "5": {
+        "heading": "Hindi Mapigilang Enerhiya ngayong Lunes! 🚀",
+        "body": "Ang pagsisimula ng linggo nang may 'Magandang' kalooban ay isang napakalakas na kapangyarihan. Nagtakda ka ng isang hindi kapani-paniwalang tono na aalingawngaw sa buong linggo mo. Gamitin ang momentum na ito upang matugunan ang iyong pinakamalaking mga layunin ngayon!"
+      }
+    },
+    "Tuesday": {
+      "1": {
+        "heading": "Nagpapadala sa Iyo ng Lakas 🫂",
+        "body": "Ang paghihirap sa Martes ay maaaring makaramdam ng pag-iisa, ngunit hindi ka nag-iisa. Lapitan mo ako kung kailangan, at unahin ang iyong kapayapaan higit sa lahat ngayon."
+      },
+      "2": {
+        "heading": "Magtiyaga sa sarili ngayon 🌿",
+        "body": "Kung medyo 'mababa' ang pakiramdam ng Martes, tandaan na hindi laging linear ang progreso. Pakinggan ang kailangan ng iyong katawan at isipan ngayon."
+      },
+      "3": {
+        "heading": "Katahimikan sa Martes 🍃",
+        "body": "Ayos lang ang isang Martes na 'Okay'. Nananatili kang matatag. Maglaan ng ilang sandali upang pahalagahan ang maliliit na tagumpay ngayon."
+      },
+      "4": {
+        "heading": "Mukhang Maliwanag ang Martes 🌤️",
+        "body": "Ang 'mabuting' mood ngayon ay isang regalo. Nalampasan mo na ang Lunes at napanatili ang positibong pananaw. Tangkilikin ang matatag na enerhiyang ito!"
+      },
+      "5": {
+        "heading": "Tagumpay sa Martes! ✨",
+        "body": "Talagang umuunlad ka ngayon! Ang pagdadala ng 'Mahusay' na enerhiya hanggang Martes ay nangangahulugan na bumubuo ka ng tunay na momentum. Patuloy na magningning!"
+      }
+    },
+    "Wednesday": {
+      "1": {
+        "heading": "Hindi ka nag-iisa ngayon 💜",
+        "body": "Mahirap ang nahihirapan sa kalagitnaan ng linggo. Bigyan mo ang sarili mo ng pahintulot na magdahan-dahan. Darating din ang katapusan ng linggo nang hindi mo namalayan."
+      },
+      "2": {
+        "heading": "Kalambot sa Kalagitnaan ng Linggo ☁️",
+        "body": "Kung ang Miyerkules ay parang 'mababa', subukang maghanap ng isang maliit na bagay na aabangan ngayong gabi. Nagtrabaho ka nang husto ngayong linggo; ayos lang na makaramdam ng pagod."
+      },
+      "3": {
+        "heading": "Balanse sa Kalagitnaan ng Linggo ⚖️",
+        "body": "Ang Miyerkules na 'Okay' ay isang matatag na angkla. Balanse ka at sumusulong. Huminga nang malalim — nasa kalagitnaan ka na roon."
+      },
+      "4": {
+        "heading": "Kaligayahan sa Araw ng mga Umbok 🐫",
+        "body": "Nakarating ka na sa Miyerkules na may 'magandang' dating. Malapit na ang katapusan ng linggo! Panatilihin ang positibong diwa habang tinatahak mo ang hangganan ng kalagitnaan ng linggo."
+      },
+      "5": {
+        "heading": "Masterclass sa Kalagitnaan ng Linggo! 🏅",
+        "body": "Kalagitnaan ng linggo at pakiramdam mo ay 'Magaling'! Ang saya-saya mo talaga. Gamitin ang peak na ito sa kalagitnaan ng linggo para gumawa ng isang bagay na tunay na magpapasaya sa iyo."
+      }
+    },
+    "Thursday": {
+      "1": {
+        "heading": "Magiliw na Yakap sa Huwebes 🧸",
+        "body": "Ang paghihirap sa Huwebes ay senyales na mahaba ang linggo. Maging matalik na kaibigan mo ang sarili mo ngayon. Malapit ka na sa finish line para sa katapusan ng linggo."
+      },
+      "2": {
+        "heading": "Repleksyon sa Huwebes 🍂",
+        "body": "Kung pakiramdam mo ay 'mababa' ka ngayon, balikan mo kung gaano karami ang nagawa mo ngayong linggo. Malayo na ang narating mo; ayos lang na mapagod."
+      },
+      "3": {
+        "heading": "Hanggang Huwebes 🕰️",
+        "body": "Ang Huwebes na 'Okay' ay isang mahusay na trabaho. Pinaghirapan mo ang buong linggo. Konti na lang ang natitira — panatilihin ang matatag na bilis."
+      },
+      "4": {
+        "heading": "Malapit na, Huwebes! 🌅",
+        "body": "Isang 'Magandang' Huwebes ang maghahanda sa iyo para sa isang kamangha-manghang katapusan ng linggo. Mararamdaman mo ang finish line! Panatilihin ang ngiti na iyan hanggang sa matapos ang karera ngayon."
+      },
+      "5": {
+        "heading": "Huwebes na Kapanapanabik! 🎡",
+        "body": "\"Maganda\" ba ang pakiramdam mo ngayong malapit na ang katapusan ng linggo? Ang saya! Tapusin ang iyong linggo nang may kahanga-hangang enerhiya."
+      }
+    },
+    "Friday": {
+      "1": {
+        "heading": "Enerhiya sa Pagpapagaling sa Biyernes ✨",
+        "body": "Ang hirap matapos ang linggo ay mahirap harapin. Maging proud sa sarili dahil nakarating ka sa Biyernes. Ang weekend na ito ay para sa iyong paggaling."
+      },
+      "2": {
+        "heading": "Paglabas sa Biyernes 🌊",
+        "body": "Kung pakiramdam mo'y 'mababa' ang Biyernes, hayaan mong magpahinga ka ngayong gabi. Marami kang dinala ngayong linggo. Panahon na para ibaba ang mabibigat na bagay."
+      },
+      "3": {
+        "heading": "Kalma sa Biyernes 😌",
+        "body": "Ang Biyernes na 'Okay' ay nangangahulugang nalampasan mo na. Nababawasan na ang pressure. Magpahinga ngayong gabi at ilabas ang stress ng linggo."
+      },
+      "4": {
+        "heading": "Magandang pakiramdam sa Biyernes! 🎊",
+        "body": "Ang Biyernes Santo ay ang perpektong tulay patungo sa katapusan ng linggo. Matagumpay mong nalampasan ang linggo. Tangkilikin ang paglipat sa iyong oras."
+      },
+      "5": {
+        "heading": "Magandang Biyernes! 🥳",
+        "body": "Tinapos ang linggo nang may 'Magandang' kalooban — kay laking tagumpay! Nakamit mo na ang kagalakang ito. Simulan ang mga pagdiriwang ng katapusan ng linggo nang may siglang ito!"
+      }
+    },
+    "Saturday": {
+      "1": {
+        "heading": "Nakakaaliw na Sabado 🕯️",
+        "body": "Ang paghihirap sa katapusan ng linggo ay maaaring maging lubhang mahirap. Maging mahinahon sana sa iyong puso ngayon. Walang tamang paraan para makaramdam nito, kahit na Sabado."
+      },
+      "2": {
+        "heading": "Kalambot ng Sabado 💤",
+        "body": "Kung ang Sabado ay parang 'mababa', huwag mapilitang 'gawin ang katapusan ng linggo'. Kung kailangan mong manatili sa bahay at magpahinga, isa itong perpektong pagpipilian."
+      },
+      "3": {
+        "heading": "Simpleng Sabado 🍵",
+        "body": "Ang Sabado na 'Okay' ay isang mapayapang talampas. Walang pagmamadali, walang pressure. Basta't mag-isa lang ay sapat na ngayon. Tangkilikin ang mga tahimik na sandali."
+      },
+      "4": {
+        "heading": "Mapayapang Sabado 🏖️",
+        "body": "Isang biyaya ang maging 'maganda' sa iyong araw ng pahinga. Aktibo ka man o nagpapahinga, tamasahin ang bawat sandali ng positibong vibe ngayong weekend."
+      },
+      "5": {
+        "heading": "Karangyaan ng Sabado! 🌈",
+        "body": "Ang isang 'Mahusay' na Sabado ay purong mahika. Ito ang iyong oras para magningning at tamasahin ang kalayaan ng katapusan ng linggo. Gumawa ng ilang magagandang alaala ngayon!"
+      }
+    },
+    "Sunday": {
+      "1": {
+        "heading": "Pangangalaga sa Sarili tuwing Linggo 💖",
+        "body": "Mas karaniwan ang paghihirap sa Linggo kaysa sa inaakala mo. Tratuhin ang iyong sarili nang may labis na pagmamahal ngayon. Sulit ang dagdag na pangangalaga para sa iyo."
+      },
+      "2": {
+        "heading": "Nakakatakot na Linggo, Umalis na 🌙",
+        "body": "Kung ang Linggo ay parang 'Mababa', sikaping magtuon sa kasalukuyang sandali kaysa sa gawain bukas. Ligtas ka at sinusuportahan ngayon."
+      },
+      "3": {
+        "heading": "Pag-aayos sa Linggo 🍂",
+        "body": "Ang Linggong 'Okay' ay isang perpektong oras para sa pagninilay at paghahanda. Ikaw ay matatag at handa para sa anumang susunod na mangyayari. Manatiling matatag."
+      },
+      "4": {
+        "heading": "Banayad na Vibes ngayong Linggo 🕊️",
+        "body": "Ang magandang pakiramdam ngayon ay magtatakda ng mapayapang sigla para sa susunod na linggo. Tangkilikin ang huling bahagi ng katapusan ng linggo nang may pusong nagpapasalamat."
+      },
+      "5": {
+        "heading": "Maaraw na Linggo! 🌻",
+        "body": "Ang isang 'Mahusay' na Linggo ang sukdulang recharge. Papasok ka sa susunod na linggo nang may buong puso. Lasapin ang magandang enerhiyang ito ngayon!"
+      }
+    }
+  }
+}
