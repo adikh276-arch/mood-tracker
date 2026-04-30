@@ -18,12 +18,12 @@ const App = () => (
       <div className="absolute top-6 left-6 z-50">
         <button
           onClick={() => {
-            if (window.parent !== window) {
-              window.parent.postMessage({ action: 'exit' }, 'https://web.mantracare.com');
-            } else {
-              window.location.href = 'https://web.mantracare.com';
-            }
-          }}
+                 if (window.parent !== window) {
+                    window.parent.postMessage({ action: 'exit' }, 'https://web.mantracare.com');
+                 } else {
+                    window.location.href = 'https://web.mantracare.com';
+                 }
+                }}
           className="flex h-12 w-12 items-center justify-center rounded-full bg-card border border-input shadow-sm text-muted-foreground hover:text-primary hover:border-primary transition-all active:scale-90"
           title="Back"
         >
